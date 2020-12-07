@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Operationalisieren und Messen | Versuchsplanung</title>
+  <meta name="description" content="Seminar zu Versuchsplanung im Wintersemester 2020" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Operationalisieren und Messen | Versuchsplanung" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Seminar zu Versuchsplanung im Wintersemester 2020" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Operationalisieren und Messen | Versuchsplanung" />
+  
+  <meta name="twitter:description" content="Seminar zu Versuchsplanung im Wintersemester 2020" />
+  
+
+<meta name="author" content="Max Brede und Maren Hinck" />
+
+
+<meta name="date" content="2020-12-06" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="literaturrecherche.html"/>
+<link rel="next" href="experimentelle-versuchspläne.html"/>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.5.2/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.16/datatables.js"></script>
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+<link href="libs/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Versuchsplanung <br> WiSe 20</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Vorwort</a></li>
+<li class="chapter" data-level="" data-path="lehrplan.html"><a href="lehrplan.html"><i class="fa fa-check"></i>Lehrplan</a>
+<ul>
+<li class="chapter" data-level="" data-path="lehrplan.html"><a href="lehrplan.html#semesterplan"><i class="fa fa-check"></i>Semesterplan</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="warum-wissenschaftliche-psychologie.html"><a href="warum-wissenschaftliche-psychologie.html"><i class="fa fa-check"></i>Warum wissenschaftliche Psychologie?</a>
+<ul>
+<li class="chapter" data-level="" data-path="warum-wissenschaftliche-psychologie.html"><a href="warum-wissenschaftliche-psychologie.html#organisatorisches"><i class="fa fa-check"></i>Organisatorisches</a></li>
+<li class="chapter" data-level="" data-path="warum-wissenschaftliche-psychologie.html"><a href="warum-wissenschaftliche-psychologie.html#alltagspsychologie-und-ihre-fehler"><i class="fa fa-check"></i>Alltagspsychologie und ihre Fehler</a></li>
+<li class="chapter" data-level="" data-path="warum-wissenschaftliche-psychologie.html"><a href="warum-wissenschaftliche-psychologie.html#wissenschaftliche-psychologie"><i class="fa fa-check"></i>Wissenschaftliche Psychologie</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="hypothesen.html"><a href="hypothesen.html"><i class="fa fa-check"></i>Hypothesen</a>
+<ul>
+<li class="chapter" data-level="" data-path="hypothesen.html"><a href="hypothesen.html#organisatorisches-1"><i class="fa fa-check"></i>Organisatorisches</a></li>
+<li class="chapter" data-level="" data-path="hypothesen.html"><a href="hypothesen.html#wiederholung"><i class="fa fa-check"></i>Wiederholung</a></li>
+<li class="chapter" data-level="" data-path="hypothesen.html"><a href="hypothesen.html#hypothesen-1"><i class="fa fa-check"></i>Hypothesen</a></li>
+<li class="chapter" data-level="" data-path="hypothesen.html"><a href="hypothesen.html#ausblick"><i class="fa fa-check"></i>Ausblick</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="experimentelles-vorgehen-und-kausalschlüsse.html"><a href="experimentelles-vorgehen-und-kausalschlüsse.html"><i class="fa fa-check"></i>Experimentelles Vorgehen und Kausalschlüsse</a>
+<ul>
+<li class="chapter" data-level="" data-path="experimentelles-vorgehen-und-kausalschlüsse.html"><a href="experimentelles-vorgehen-und-kausalschlüsse.html#organisatorisches-2"><i class="fa fa-check"></i>Organisatorisches</a></li>
+<li class="chapter" data-level="" data-path="experimentelles-vorgehen-und-kausalschlüsse.html"><a href="experimentelles-vorgehen-und-kausalschlüsse.html#wiederholung-1"><i class="fa fa-check"></i>Wiederholung</a></li>
+<li class="chapter" data-level="" data-path="experimentelles-vorgehen-und-kausalschlüsse.html"><a href="experimentelles-vorgehen-und-kausalschlüsse.html#grundidee-des-experimentierens"><i class="fa fa-check"></i>Grundidee des Experimentierens</a></li>
+<li class="chapter" data-level="" data-path="experimentelles-vorgehen-und-kausalschlüsse.html"><a href="experimentelles-vorgehen-und-kausalschlüsse.html#typen-von-studien-experimenten"><i class="fa fa-check"></i>Typen von Studien / Experimenten</a></li>
+<li class="chapter" data-level="" data-path="experimentelles-vorgehen-und-kausalschlüsse.html"><a href="experimentelles-vorgehen-und-kausalschlüsse.html#fallbeispiele"><i class="fa fa-check"></i>Fallbeispiele</a></li>
+<li class="chapter" data-level="" data-path="experimentelles-vorgehen-und-kausalschlüsse.html"><a href="experimentelles-vorgehen-und-kausalschlüsse.html#ausblick-1"><i class="fa fa-check"></i>Ausblick</a></li>
+<li class="chapter" data-level="" data-path="experimentelles-vorgehen-und-kausalschlüsse.html"><a href="experimentelles-vorgehen-und-kausalschlüsse.html#anhang"><i class="fa fa-check"></i>Anhang</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="literaturrecherche.html"><a href="literaturrecherche.html"><i class="fa fa-check"></i>Literaturrecherche</a>
+<ul>
+<li class="chapter" data-level="" data-path="literaturrecherche.html"><a href="literaturrecherche.html#organisatorisches-3"><i class="fa fa-check"></i>Organisatorisches</a></li>
+<li class="chapter" data-level="" data-path="literaturrecherche.html"><a href="literaturrecherche.html#wiederholung-2"><i class="fa fa-check"></i>Wiederholung</a></li>
+<li class="chapter" data-level="" data-path="literaturrecherche.html"><a href="literaturrecherche.html#literaturrecherche-1"><i class="fa fa-check"></i>Literaturrecherche</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="operationalisieren-und-messen.html"><a href="operationalisieren-und-messen.html"><i class="fa fa-check"></i>Operationalisieren und Messen</a>
+<ul>
+<li class="chapter" data-level="" data-path="operationalisieren-und-messen.html"><a href="operationalisieren-und-messen.html#organisatorisches-4"><i class="fa fa-check"></i>Organisatorisches</a></li>
+<li class="chapter" data-level="" data-path="operationalisieren-und-messen.html"><a href="operationalisieren-und-messen.html#wiederholung-3"><i class="fa fa-check"></i>Wiederholung</a></li>
+<li class="chapter" data-level="" data-path="operationalisieren-und-messen.html"><a href="operationalisieren-und-messen.html#operationalisierung"><i class="fa fa-check"></i>Operationalisierung</a></li>
+<li class="chapter" data-level="" data-path="operationalisieren-und-messen.html"><a href="operationalisieren-und-messen.html#güte-von-operationalisierungen"><i class="fa fa-check"></i>Güte von Operationalisierungen</a></li>
+<li class="chapter" data-level="" data-path="operationalisieren-und-messen.html"><a href="operationalisieren-und-messen.html#operationalisierungsmethoden"><i class="fa fa-check"></i>Operationalisierungsmethoden</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="experimentelle-versuchspläne.html"><a href="experimentelle-versuchspläne.html"><i class="fa fa-check"></i>Experimentelle Versuchspläne</a>
+<ul>
+<li class="chapter" data-level="" data-path="experimentelle-versuchspläne.html"><a href="experimentelle-versuchspläne.html#organisatorisches-5"><i class="fa fa-check"></i>Organisatorisches</a></li>
+<li class="chapter" data-level="" data-path="experimentelle-versuchspläne.html"><a href="experimentelle-versuchspläne.html#wiederholung-4"><i class="fa fa-check"></i>Wiederholung</a></li>
+<li class="chapter" data-level="" data-path="experimentelle-versuchspläne.html"><a href="experimentelle-versuchspläne.html#versuchspläne"><i class="fa fa-check"></i>Versuchspläne</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="störvariablen.html"><a href="störvariablen.html"><i class="fa fa-check"></i>Störvariablen</a>
+<ul>
+<li class="chapter" data-level="" data-path="störvariablen.html"><a href="störvariablen.html#organisatorisches-6"><i class="fa fa-check"></i>Organisatorisches</a></li>
+<li class="chapter" data-level="" data-path="störvariablen.html"><a href="störvariablen.html#wiederholung-5"><i class="fa fa-check"></i>Wiederholung</a></li>
+<li class="chapter" data-level="" data-path="störvariablen.html"><a href="störvariablen.html#varianz---freund-und-feind"><i class="fa fa-check"></i>Varianz - Freund und Feind</a></li>
+<li class="chapter" data-level="" data-path="störvariablen.html"><a href="störvariablen.html#störvariablen-1"><i class="fa fa-check"></i>Störvariablen</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="literatur-2.html"><a href="literatur-2.html"><i class="fa fa-check"></i>Literatur</a></li>
+<li class="divider"></li>
+<li><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Versuchsplanung</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="operationalisieren-und-messen" class="section level1">
+<h1>Operationalisieren und Messen</h1>
+<div id="organisatorisches-4" class="section level2">
+<h2>Organisatorisches</h2>
+<div id="semesterplan-5" class="section level3">
+<h3>Semesterplan</h3>
+<table class=" lightable-classic" style="font-size: 15px; font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+Sitzung
+</th>
+<th style="text-align:left;">
+Datum
+</th>
+<th style="text-align:left;">
+Sitzungstitel
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+02.11.2020
+</td>
+<td style="text-align:left;">
+Warum wissenschaftliche Psychologie
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+28.11.2020
+29.11.2020
+</td>
+<td style="text-align:left;">
+Hypothesen und der Prozess der Hypothesenprüfung
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+28.11.2020
+29.11.2020
+</td>
+<td style="text-align:left;">
+Experimentelles Vorgehen
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+28.11.2020
+29.11.2020
+</td>
+<td style="text-align:left;">
+Literaturrecherche
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+28.11.2020
+29.11.2020
+</td>
+<td style="text-align:left;">
+Operationalisieren und Messen
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:left;">
+12.12.2020
+13.12.2020
+</td>
+<td style="text-align:left;">
+Experimentelle Versuchspläne
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+12.12.2020
+13.12.2020
+</td>
+<td style="text-align:left;">
+Störvariablen im Experiment
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:left;">
+12.12.2020
+13.12.2020
+</td>
+<td style="text-align:left;">
+Nicht-experimentelle Versuchspläne
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:left;">
+12.12.2020
+13.12.2020
+</td>
+<td style="text-align:left;">
+Material und Stichprobe
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:left;">
+23.1.2021
+24.1.2021
+</td>
+<td style="text-align:left;">
+Auswertung, Darstellung und Interpretation
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:left;">
+23.1.2021
+24.1.2021
+</td>
+<td style="text-align:left;">
+Ethische Probleme im Versuch
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:left;">
+23.1.2021
+24.1.2021
+</td>
+<td style="text-align:left;">
+Publikationsprozess
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:left;">
+wird noch bekannt gegeben
+</td>
+<td style="text-align:left;">
+Vorstellung der Gruppenarbeiten
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:left;">
+wird noch bekannt gegeben
+</td>
+<td style="text-align:left;">
+Klausurvorbereitung
+</td>
+</tr>
+</tbody>
+</table>
+<!-- ### Hausaufgabe -->
+<!-- \includegraphics[width=\textwidth]{Frage1.pdf} -->
+</div>
+</div>
+<div id="wiederholung-3" class="section level2">
+<h2>Wiederholung</h2>
+<div id="wozu-überhaupt-1" class="section level3">
+<h3>Wozu überhaupt?</h3>
+<div class="cols">
+<div class="col">
+<p><img src="imgs/hypothesen_lit.png" width="450px" style="display: block; margin: auto;" /></p>
+</div>
+<div class="col">
+<p><strong>Theorie:</strong></p>
+<p>Überblick über bisherige Forschung verschaffen um:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Ein beobachtetes Phänomen in bestehende Theorien einzuordnen</p></li>
+<li><p>Hypothesen über ein Phänomen abzuleiten</p></li>
+<li><p>Nachzulesen welche Umsetzungsparameter für meine Studie vielversprechend sind</p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="operationalisierung" class="section level2">
+<h2>Operationalisierung</h2>
+<div id="operationalisierung-1" class="section level3">
+<h3>Operationalisierung:</h3>
+<div id="theoretische-konstrukte-in-beobachtbare-größe-überführen" class="section level4">
+<h4>Theoretische Konstrukte in beobachtbare Größe überführen</h4>
+<p>Beispiel: Welchen Einfluss hat Ängstlichkeit auf Lernen?</p>
+<p><img src="Versuchsplanung_WS20_files/figure-html/lernen_again-1.png" width="600px" style="display: block; margin: auto;" /></p>
+<p>Hier unterscheidet sich die Operationalisierung der abhängigen Variable (Lernen).
+Die widersprüchlichen Ergebnisse zeigen, dass das Konstrukt Lernen nicht einheitlich ist und
+die Operationalisierungen verschiedene Aspekte dieses Konstruktes repräsentieren.</p>
+<!-- ### Operationalisieren -->
+<p><strong>Operationalisierung</strong> = Definition der genauen Operationen (Handlungen), durch
+welche ein theoretisches Konstrukt durch Beobachtung, Zählung, Messung, etc.
+erfasst werden soll. Praktische Umsetzung des theoretischen Konstruktes</p>
+<p>Ein <strong>theoretisches <em>Konstrukt</em></strong> ist eine <strong>nicht direkt beobachtbare komplexe Variable</strong>,
+welche erst über <strong>beobachtbare <em>Indikatoren operationalisiert</em></strong> und messbar gemacht
+werden muss.</p>
+<p><strong>Notwendigkeit theoretischer Vorarbeit:</strong> Das theoretische Konstrukt muss zunächst
+<strong>inhaltlich eindeutig definiert</strong> werden, um mögliche Indikatoren zu identifizieren und
+zu begründen, welche dann stellvertretend für das theoretische Konstrukt gemessen
+werden können.</p>
+<!-- Welche Beispiele für psychologische Konstrukte kennen Sie? -->
+<!-- ### Operationalisieren -->
+<p><img src="imgs/operartionalisierung.png" width="600px" style="display: block; margin: auto;" /></p>
+<!-- ### Operationalisieren -->
+<p><img src="imgs/operartionalisierung_stress.png" width="600px" style="display: block; margin: auto;" /></p>
+<!-- ### Operationalisieren -->
+</div>
+<div id="ein-beispiel-wie-entsteht-liebe" class="section level4">
+<h4>Ein Beispiel: Wie entsteht Liebe?</h4>
+<p><strong>Hypothese:</strong> Selbstöffnung führt zu interpersonaler Attraktion
+(„Wenn man mit dem anderen über persönliche Dinge redet, verliebt man sich.“)</p>
+<p>Was ist die unabhängige Variable?</p>
+<p>Was ist die abhängige Variable?</p>
+<p>Was sind wichtige Störvariablen?</p>
+<p>Wie stellen wir die Ausprägungen dieser Variablen her (UV)?</p>
+<p>Wie überführen wir diese Variablen (AV) in messbare Größen?</p>
+<p>Wie kontrollieren/messen wir diese Variablen (SV)?</p>
+<p>Beispiele bei <span class="citation"><a href="literatur-2.html#ref-aronExperimentalGenerationInterpersonal1997" role="doc-biblioref">Aron et al.</a> (<a href="literatur-2.html#ref-aronExperimentalGenerationInterpersonal1997" role="doc-biblioref">1997</a>)</span> und <span class="citation"><a href="literatur-2.html#ref-sprecherEffectsSelfdisclosureRole2013" role="doc-biblioref">Sprecher, Treger, and Wondra</a> (<a href="literatur-2.html#ref-sprecherEffectsSelfdisclosureRole2013" role="doc-biblioref">2013</a>)</span></p>
+<!-- ### Operationalisieren -->
+</div>
+<div id="uv-im-beispiel" class="section level4">
+<h4>UV im Beispiel:</h4>
+<div class="cols">
+<div class="col">
+<p><img src="imgs/copyright.png" width="450px" style="display: block; margin: auto;" /></p>
+</div>
+<div class="col">
+<table class=" lightable-classic" style="font-size: 15px; font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+Frage
+</th>
+<th style="text-align:left;">
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+Given the choice of anyone in the world, whom would you want as a dinner guest?
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+What would you constitute a ‘perfect’ day for you?
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+Do you have a secret hunch about how you will die?
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:left;">
+What do you value most in a friendship?
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:left;">
+What is your most treasured memory?
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:left;">
+What does friendship mean to you?
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:left;">
+What, if anything, is too serious to be joked about?
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+32
+</td>
+<td style="text-align:left;">
+Of all the people in your family, whose death woul you find most disturbing? Why?
+</td>
+</tr>
+</tbody>
+</table>
+<p><a href="http://www.focus.de/reisen/zeit-fuer-uns/liebe-als-experiment-die-uebersetzten-36-fragen-aus-dr-arthur-arons-studie_id_4406469.html">Alle Fragen in deutscher Übersetzung</a></p>
+</div>
+</div>
+<!-- ### Operationalisieren -->
+</div>
+<div id="av-im-beispiel" class="section level4">
+<h4>AV im Beispiel:</h4>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-89"></span>
+<img src="imgs/copyright.png" alt="'Inclusion of the Other in the Self'-Skala aus @aronInclusionOtherSelf1992" width="600px" />
+<p class="caption">
+Abb. 9: ‘Inclusion of the Other in the Self’-Skala aus <span class="citation"><a href="literatur-2.html#ref-aronInclusionOtherSelf1992" role="doc-biblioref">Aron, Aron, and Smollan</a> (<a href="literatur-2.html#ref-aronInclusionOtherSelf1992" role="doc-biblioref">1992</a>)</span>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="güte-von-operationalisierungen" class="section level2">
+<h2>Güte von Operationalisierungen</h2>
+<div id="qualitäts-merkmale-von-operationalisierungen" class="section level3">
+<h3>(Qualitäts-)Merkmale von Operationalisierungen:</h3>
+<ul>
+<li><p><strong><em>Divergenz</em>:</strong> Ein theoretisches Konstrukt kann durch mehrere Indikatoren operationalisiert werden, wobei jeweils verschiedene Aspekte des Konstrukts unterschiedlich gut abgebildet werden.</p></li>
+<li><p><strong><em>Konvergenz</em> :</strong> Ein empirischer Indikator operationalisiert gleichzeitig verschiedene Aspekte mehrerer Konstrukte, wobei manche besser abgebildet werden als andere.</p></li>
+</ul>
+<p><img src="imgs/operartionalisierung_konvdiv.png" width="600px" style="display: block; margin: auto;" /></p>
+</div>
+<div id="qualitäts-merkmale-von-operationalisierungen-1" class="section level3">
+<h3>(Qualitäts-)Merkmale von Operationalisierungen:</h3>
+<ul>
+<li><p><strong><em>Sensitivität</em> : </strong> „Empfindlichkeit“ mit der ein Indikator das gemeinte Konstrukt anzeigt,
+unabhängig davon ob er zusätzlich auch weitere Konstrukte anzeigt.</p></li>
+<li><p><strong><em>Selektivität/Spezifität</em> : </strong> „Präzision“ mit der ein Indikator ausschließlich das gemeinte Konstrukt
+und nicht auch weitere Konstrukte anzeigt.</p></li>
+</ul>
+<p><span class="math inline">\(\rightarrow\)</span> Eine Hypothese bewährt sich um so stärker, bzw. kann um so weiter generalisiert werden, je
+mehr unterschiedliche Operationalisierungen für ihre Kernkonstrukte verwendet werden.
+„Funktioniert“ nur eine bestimmte Operationalisierung ist oft fraglich welches Konstrukt eigentlich
+dahinter steht.</p>
+</div>
+<div id="sensitivität-spezifität" class="section level3">
+<h3>Sensitivität / Spezifität</h3>
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; width: 100%; margin-left: auto; margin-right: auto; height: 500px; " id="tab:unnamed-chunk-91">
+<caption style="caption-side: top; text-align: center;"><span id="tab:unnamed-chunk-91">Tab. 5: </span> </caption><col style="width: 33%"><col style="width: 33%"><col style="width: 33%"><tr style="height: 20%;">
+<td style="vertical-align: bottom; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></td><td style="vertical-align: bottom; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">krank</td><td style="vertical-align: bottom; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">nicht krank</td></tr>
+<tr style="height: 40%;">
+<td style="vertical-align: middle; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.4pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Test positiv</td><td style="vertical-align: middle; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">richtig positiv</td><td style="vertical-align: middle; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">falsch positiv</td></tr>
+<tr style="height: 40%;">
+<td style="vertical-align: middle; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.4pt 0pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Test negativ</td><td style="vertical-align: middle; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">falsch negativ</td><td style="vertical-align: middle; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">richtig negativ</td></tr>
+</table>
+
+<p>Sensitivität<span class="math inline">\(:= \frac{richtig\hspace{1mm} positiv}{krank}\)</span></p>
+<p>Spezifität<span class="math inline">\(:= \frac{richtig\hspace{1mm} negativ}{nicht \hspace{1mm} krank}\)</span></p>
+<p><a href="https://www.youtube.com/watch?v=czzrPQIg54Q">Sehr gute, aktuelle Erklärung von Dr. Mai Thi Nguyen-Kim</a></p>
+</div>
+<div id="exkurs-klassische-testtheorie-validität-reliabilität-objektivität" class="section level3">
+<h3>Exkurs klassische Testtheorie: Validität, Reliabilität, Objektivität</h3>
+<p>Die Begriffe <em>Validität</em>, <em>Reliabilität</em> und <em>Objektivität</em> nennt man die <strong>Hauptgütekriterien</strong> der klassischen Testtheorie. </p>
+<ul>
+<li><p><strong>Reliabilität</strong>: Sind meine Messergebnisse unabhängig von Störeinflüssen?</p></li>
+<li><p><strong>Validität</strong>: Messe ich das theoretische Konstrukt, das ich messen möchte?</p></li>
+<li><p><strong>Objektivität</strong>: Sind die Ergebnisse meines Messinstruments unabhängig von der Person, die es anwendet?</p></li>
+</ul>
+</div>
+<div id="validitäten-bei-experimenten" class="section level3">
+<h3>Validitäten bei Experimenten</h3>
+<div id="konstruktvalidität" class="section level4">
+<h4>Konstruktvalidität:</h4>
+<p>Gibt an, inwieweit UVn und AVn so operationalisiert sind, dass sie die jeweiligen psychologischen
+Konstrukte möglichst zutreffend repräsentieren und mit bestehenden Konstruktdefinitionen und
+Theorien übereinstimmen.</p>
+</div>
+<div id="inferenzstatistische-validität" class="section level4">
+<h4>Inferenzstatistische Validität:</h4>
+<p>Gibt an, inwieweit die gewählten statistischen Verfahren geeignet sind, um von einer Stichprobe
+auf Variablen in der Population zu schließen (gefährdet bei Verletzung der Voraussetzungen)</p>
+</div>
+<div id="interne-validität" class="section level4">
+<h4>Interne Validität:</h4>
+<p>Gibt an, inwieweit die Veränderungen der AV auf die Manipulation der UVn zurückgeführt und
+mögliche Alternativerklärungen durch Störeinflüsse ausgeschlossen werden können.</p>
+</div>
+<div id="externe-validität" class="section level4">
+<h4>Externe Validität:</h4>
+<p>Gibt an, inwieweit die Untersuchungsergebnisse übertragbar (generalisierbar) sind
+von der Stichprobe auf die Population (Repräsentativität)
+von der Laborsituation auf natürliche Situationen (ökologische Validität)</p>
+</div>
+</div>
+<div id="wie-könnte-man-intelligenz-messen" class="section level3">
+<h3>Wie könnte man Intelligenz messen?</h3>
+<!-- # ```{r, include=FALSE} -->
+<!-- # set_output_width(400) -->
+<!-- # ``` -->
+<!-- :::: {.cols data-latex=""} -->
+<!-- ::: {.col data-latex="{0.48\textwidth}"} -->
+<!-- reliabel aber nicht valide[^1] -->
+<table class=" lightable-classic lightable-minimal" style="font-size: 15px; font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto; font-family: &quot;Trebuchet MS&quot;, verdana, sans-serif; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:left;">
+niedrige Validität
+</th>
+<th style="text-align:left;">
+hohe Validität
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+hohe Reliabilität
+</td>
+<td style="text-align:left;">
+<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> <img src="imgs/thermo.jpg" width="144" height="144">
+</td>
+<td style="text-align:left;">
+<html>
+<body>
+<img src="imgs/copyright.png" width="144" height="144">
+</body>
+</html>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+niedrige Reliabilität
+</td>
+<td style="text-align:left;">
+<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> <img src="imgs/frog.jpg" width="144" height="144">
+</td>
+<td style="text-align:left;">
+<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>
+<html>
+<body>
+<img src="imgs/kitty.png" width="144" height="144">
+</body>
+</html>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- ```{r} -->
+<!-- open_copyright_image('imgs/frog.jpg') -->
+<!-- ``` -->
+<!-- nicht reliabel und nicht valide[^2] -->
+<!-- ::: -->
+<!-- ::: {.col data-latex="{0.48\textwidth}"} -->
+<!-- reliabel und valide -->
+<!-- ```{r} -->
+<!-- open_copyright_image('old/wisc.jpg') -->
+<!-- ``` -->
+<!-- ```{r} -->
+<!-- include_graphics('imgs/kitty.png') -->
+<!-- ``` -->
+<!-- nicht reliabel aber valide [^3] -->
+<!-- ::: -->
+<!-- :::: -->
+</div>
+<div id="validität-in-experimenten" class="section level3">
+<h3>Validität in Experimenten</h3>
+<p><img src="imgs/validitaeten.png" width="600px" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="operationalisierungsmethoden" class="section level2">
+<h2>Operationalisierungsmethoden</h2>
+<div id="operationalisierung-der-uv" class="section level3">
+<h3>Operationalisierung der UV</h3>
+<div id="externe-einflüsse-externe-uv" class="section level4">
+<h4>Externe Einflüsse / externe UV:</h4>
+<ul>
+<li>Sind meist beobachtungsnah und lassen sich daher relativ leicht operationalisieren.</li>
+<li>Beispiele:
+<ul>
+<li>„Lärm beeinflusst die Konzentrationsleistung.“</li>
+<li>„Die Luminanz des Hintergrundes beeinflusst die wahrgenommene Helligkeit des Objektes“</li>
+</ul></li>
+</ul>
+</div>
+<div id="interne-psychologische-konstrukte-interne-uvn" class="section level4">
+<h4>Interne psychologische Konstrukte / interne UVn:</h4>
+<ul>
+<li>Sind meist beobachtungsfern und müssen aufwendiger und indirekter operationalisiert werden.</li>
+<li>Beispiele:
+<ul>
+<li>„Motivation beeinflusst die Konzentrationsleistung.“</li>
+<li>„Das Vorwissen über ein Objekt beeinflusst seine wahrgenommene Helligkeit.“</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="operationalisierung-der-uv-1" class="section level3">
+<h3>Operationalisierung der UV</h3>
+<p>Konkret werden oft komplexe Versuchsanordnungen verwendet um bestimmte UV Stufen zu
+operationalisieren. Handelt es sich bei der UV um ein <strong>internes psychologisches Konstrukt</strong>, so kann
+dieses natürlich nur <strong>indirekt</strong> über die <strong>Auswirkung externer Manipulationen</strong> (und <strong>unter Annahme
+von Hilfshypothesen!</strong>) operationalisiert werden.</p>
+<p>Hierzu werden <strong>Umgebungsbedingungen, Reize, Instruktionen, Aufgaben,</strong> etc. entsprechend variiert.</p>
+</div>
+<div id="operationalisierung-der-av-maße-der-verhaltenswissenschaft-psychologie" class="section level3">
+<h3>Operationalisierung der AV: Maße der Verhaltenswissenschaft (Psychologie)</h3>
+<p><strong>Verhaltensbeobachtung:</strong> Das Verhalten der VP wird direkt beobachtet und für das Konstrukt
+relevantes Verhalten wird möglichst objektiv erfasst.</p>
+<p><strong>Befragung:</strong> Die VP antwortet mündlich (Interview) oder schriftlich (Fragebogen) auf ihr gestellte
+Fragen. Die Fragen können mehr (Ankreuzen, Ratingskalen) oder weniger (freies Antwortformat)
+strukturiert sein.</p>
+<p><strong>Test:</strong> Der VP werden unter standardisierten Bedingungen standardisierte Reize (Bilder, Töne,
+Aufgaben, etc.) vorgegeben, auf welche die VP reagieren muss (Benennen, Knopf drücken, komplexe
+Aufgabe lösen, etc.). Die Reaktionen können ggf. mit großen Normstichproben verglichen werden.</p>
+<p><strong>Analyse von Verhaltensspuren:</strong> Indirekte Spuren des Verhaltens der VP (Zeichnungen, Briefe, Fotos,
+Tagebücher, Nutzungsspuren, Cookies, Bewegungsprofile, etc.) werden ausgewertet.</p>
+<p><strong>Spezielle Mess- und Beobachtungsgeräte:</strong> z.B. Messung der Augenbewegungen, Fixationen,
+Sakkaden und Pupillenreaktionen mittels Eye-Tracking</p>
+<!-- ### Operationalisierung der UV: Maße der Verhaltensneurobiologie -->
+<!-- \scriptsize -->
+<!-- \begin{minipage}{.58\textwidth} -->
+<!-- \begin{itemize} -->
+<!-- \item tACS/tDCS\bigskip -->
+<!-- \item TMS\bigskip -->
+<!-- \item \textcolor{Gray}{Pharmakologische Interventionen} -->
+<!-- \end{itemize} -->
+<!-- \end{minipage} -->
+<!-- \begin{minipage}{.4\textwidth} -->
+<!-- \centering -->
+<!-- \includegraphics[width=0.6\textwidth]{tdcs.jpg}\newline -->
+<!-- \inlineMovie[]{out4.avi}{some.png}{height=0.4\textheight}\newline -->
+<!-- \includegraphics[width=0.6\textwidth]{tabletts.jpg}\newline -->
+<!-- \end{minipage} -->
+<!-- ### Operationalisierung der AV: Maße der Verhaltensneurobiologie -->
+<!-- \scriptsize -->
+<!-- \begin{minipage}{.58\textwidth} -->
+<!-- \textbf{Elektrophysiologische Ma\ss e} -->
+<!-- \begin{itemize} -->
+<!-- \item Elektrokardiogramm (EKG) -->
+<!-- \item Elektrodermale Aktivität (EDA) -->
+<!-- \item Elektromyogramm (EMG) -->
+<!-- \item Elektroenzephalogramm (EEG, Oszillationen, EP, ERP, PSG) -->
+<!-- \end{itemize} -->
+<!-- \textbf{Bildgebende Verfahren:} -->
+<!-- \begin{itemize} -->
+<!-- \item Funktionelle Magnetresonanztomographie (fMRT) -->
+<!-- \item \textcolor{Gray}{Positronen-Emissions-Tomographie (PET)} -->
+<!-- \item Magnetenzephalographie (MEG) -->
+<!-- \end{itemize} -->
+<!-- \textbf{„Nasse“ Parameter:} -->
+<!-- \begin{itemize} -->
+<!-- \item Hormone in Speichel, Urin, Haar -->
+<!-- \item \textcolor{Gray}{Hormone und Stoffwechselprodukte im Blut} -->
+<!-- \item Gene -->
+<!-- \end{itemize} -->
+<!-- \end{minipage} -->
+<!-- \begin{minipage}{.4\textwidth} -->
+<!-- \centering -->
+<!-- \includegraphics[width=0.6\textwidth]{EEG.jpg}\newline -->
+<!-- \includegraphics[width=0.6\textwidth]{fmri.jpg}\newline -->
+<!-- \end{minipage} -->
+</div>
+<div id="übung" class="section level3">
+<h3>Übung</h3>
+<p>Gibt’s im Olat</p>
+</div>
+<div id="literatur-1" class="section level3">
+<h3>Literatur</h3>
+<!-- ### Hausaufgabe -->
+<!-- Huber Kapitel 4.3 \& 5 -->
+
+<!-- #--- -->
+<!-- title: 'Psy_B_4: Versuchsplanung - Kapitel 6' -->
+<!-- subtitle: 'Experimentelle Versuchspläne' -->
+<!-- author: "Maren Hinck und Max Brede" -->
+<!-- output: -->
+<!--  ##### beamer_presentation: -->
+<!--  #####   includes: -->
+<!--  #####       in_header: /home/brede/MEGA/Andres/Header/header_beamer.tex -->
+<!--  #####   theme: "default" -->
+<!--  #####   slide_level: 3 -->
+<!--  #####   incremental: false -->
+<!--  #####   colortheme: "sidebartab" -->
+<!--    ioslides_presentation: -->
+<!--      transition: faster -->
+<!--      css: /home/brede/MEGA/Honorar/111220_KfN/styles.css -->
+<!--      slide_level: 3 -->
+<!-- widescreen: true -->
+<!-- bibliography: references.bib -->
+<!-- csl: /home/brede/MEGA/Andres/Header/dgps.csl -->
+<!-- --- -->
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>Abbildung unter CC-0-Lizenz, Quelle: <a href="https://www.publicdomainpictures.net/en/view-image.php?image=3459&amp;picture=thermometer" class="uri">https://www.publicdomainpictures.net/en/view-image.php?image=3459&amp;picture=thermometer</a><a href="operationalisieren-und-messen.html#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Abbildung unter CC-0-Lizenz, Quelle: <a href="https://www.pexels.com/de-de/foto/tier-grun-frosch-krote-35669" class="uri">https://www.pexels.com/de-de/foto/tier-grun-frosch-krote-35669</a><a href="operationalisieren-und-messen.html#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Abbildung unter CC-BY-NC-Lizenz, Quelle: <a href="https://xkcd.com/231/" class="uri">https://xkcd.com/231/</a><a href="operationalisieren-und-messen.html#fnref3" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="literaturrecherche.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="experimentelle-versuchspläne.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Versuchsplanung_WS20.pdf"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

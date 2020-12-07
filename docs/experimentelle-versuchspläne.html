@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Experimentelle Versuchspläne | Versuchsplanung</title>
+  <meta name="description" content="Seminar zu Versuchsplanung im Wintersemester 2020" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Experimentelle Versuchspläne | Versuchsplanung" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Seminar zu Versuchsplanung im Wintersemester 2020" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Experimentelle Versuchspläne | Versuchsplanung" />
+  
+  <meta name="twitter:description" content="Seminar zu Versuchsplanung im Wintersemester 2020" />
+  
+
+<meta name="author" content="Max Brede und Maren Hinck" />
+
+
+<meta name="date" content="2020-12-06" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="operationalisieren-und-messen.html"/>
+<link rel="next" href="störvariablen.html"/>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.5.2/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.16/datatables.js"></script>
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+<link href="libs/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Versuchsplanung <br> WiSe 20</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Vorwort</a></li>
+<li class="chapter" data-level="" data-path="lehrplan.html"><a href="lehrplan.html"><i class="fa fa-check"></i>Lehrplan</a>
+<ul>
+<li class="chapter" data-level="" data-path="lehrplan.html"><a href="lehrplan.html#semesterplan"><i class="fa fa-check"></i>Semesterplan</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="warum-wissenschaftliche-psychologie.html"><a href="warum-wissenschaftliche-psychologie.html"><i class="fa fa-check"></i>Warum wissenschaftliche Psychologie?</a>
+<ul>
+<li class="chapter" data-level="" data-path="warum-wissenschaftliche-psychologie.html"><a href="warum-wissenschaftliche-psychologie.html#organisatorisches"><i class="fa fa-check"></i>Organisatorisches</a></li>
+<li class="chapter" data-level="" data-path="warum-wissenschaftliche-psychologie.html"><a href="warum-wissenschaftliche-psychologie.html#alltagspsychologie-und-ihre-fehler"><i class="fa fa-check"></i>Alltagspsychologie und ihre Fehler</a></li>
+<li class="chapter" data-level="" data-path="warum-wissenschaftliche-psychologie.html"><a href="warum-wissenschaftliche-psychologie.html#wissenschaftliche-psychologie"><i class="fa fa-check"></i>Wissenschaftliche Psychologie</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="hypothesen.html"><a href="hypothesen.html"><i class="fa fa-check"></i>Hypothesen</a>
+<ul>
+<li class="chapter" data-level="" data-path="hypothesen.html"><a href="hypothesen.html#organisatorisches-1"><i class="fa fa-check"></i>Organisatorisches</a></li>
+<li class="chapter" data-level="" data-path="hypothesen.html"><a href="hypothesen.html#wiederholung"><i class="fa fa-check"></i>Wiederholung</a></li>
+<li class="chapter" data-level="" data-path="hypothesen.html"><a href="hypothesen.html#hypothesen-1"><i class="fa fa-check"></i>Hypothesen</a></li>
+<li class="chapter" data-level="" data-path="hypothesen.html"><a href="hypothesen.html#ausblick"><i class="fa fa-check"></i>Ausblick</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="experimentelles-vorgehen-und-kausalschlüsse.html"><a href="experimentelles-vorgehen-und-kausalschlüsse.html"><i class="fa fa-check"></i>Experimentelles Vorgehen und Kausalschlüsse</a>
+<ul>
+<li class="chapter" data-level="" data-path="experimentelles-vorgehen-und-kausalschlüsse.html"><a href="experimentelles-vorgehen-und-kausalschlüsse.html#organisatorisches-2"><i class="fa fa-check"></i>Organisatorisches</a></li>
+<li class="chapter" data-level="" data-path="experimentelles-vorgehen-und-kausalschlüsse.html"><a href="experimentelles-vorgehen-und-kausalschlüsse.html#wiederholung-1"><i class="fa fa-check"></i>Wiederholung</a></li>
+<li class="chapter" data-level="" data-path="experimentelles-vorgehen-und-kausalschlüsse.html"><a href="experimentelles-vorgehen-und-kausalschlüsse.html#grundidee-des-experimentierens"><i class="fa fa-check"></i>Grundidee des Experimentierens</a></li>
+<li class="chapter" data-level="" data-path="experimentelles-vorgehen-und-kausalschlüsse.html"><a href="experimentelles-vorgehen-und-kausalschlüsse.html#typen-von-studien-experimenten"><i class="fa fa-check"></i>Typen von Studien / Experimenten</a></li>
+<li class="chapter" data-level="" data-path="experimentelles-vorgehen-und-kausalschlüsse.html"><a href="experimentelles-vorgehen-und-kausalschlüsse.html#fallbeispiele"><i class="fa fa-check"></i>Fallbeispiele</a></li>
+<li class="chapter" data-level="" data-path="experimentelles-vorgehen-und-kausalschlüsse.html"><a href="experimentelles-vorgehen-und-kausalschlüsse.html#ausblick-1"><i class="fa fa-check"></i>Ausblick</a></li>
+<li class="chapter" data-level="" data-path="experimentelles-vorgehen-und-kausalschlüsse.html"><a href="experimentelles-vorgehen-und-kausalschlüsse.html#anhang"><i class="fa fa-check"></i>Anhang</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="literaturrecherche.html"><a href="literaturrecherche.html"><i class="fa fa-check"></i>Literaturrecherche</a>
+<ul>
+<li class="chapter" data-level="" data-path="literaturrecherche.html"><a href="literaturrecherche.html#organisatorisches-3"><i class="fa fa-check"></i>Organisatorisches</a></li>
+<li class="chapter" data-level="" data-path="literaturrecherche.html"><a href="literaturrecherche.html#wiederholung-2"><i class="fa fa-check"></i>Wiederholung</a></li>
+<li class="chapter" data-level="" data-path="literaturrecherche.html"><a href="literaturrecherche.html#literaturrecherche-1"><i class="fa fa-check"></i>Literaturrecherche</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="operationalisieren-und-messen.html"><a href="operationalisieren-und-messen.html"><i class="fa fa-check"></i>Operationalisieren und Messen</a>
+<ul>
+<li class="chapter" data-level="" data-path="operationalisieren-und-messen.html"><a href="operationalisieren-und-messen.html#organisatorisches-4"><i class="fa fa-check"></i>Organisatorisches</a></li>
+<li class="chapter" data-level="" data-path="operationalisieren-und-messen.html"><a href="operationalisieren-und-messen.html#wiederholung-3"><i class="fa fa-check"></i>Wiederholung</a></li>
+<li class="chapter" data-level="" data-path="operationalisieren-und-messen.html"><a href="operationalisieren-und-messen.html#operationalisierung"><i class="fa fa-check"></i>Operationalisierung</a></li>
+<li class="chapter" data-level="" data-path="operationalisieren-und-messen.html"><a href="operationalisieren-und-messen.html#güte-von-operationalisierungen"><i class="fa fa-check"></i>Güte von Operationalisierungen</a></li>
+<li class="chapter" data-level="" data-path="operationalisieren-und-messen.html"><a href="operationalisieren-und-messen.html#operationalisierungsmethoden"><i class="fa fa-check"></i>Operationalisierungsmethoden</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="experimentelle-versuchspläne.html"><a href="experimentelle-versuchspläne.html"><i class="fa fa-check"></i>Experimentelle Versuchspläne</a>
+<ul>
+<li class="chapter" data-level="" data-path="experimentelle-versuchspläne.html"><a href="experimentelle-versuchspläne.html#organisatorisches-5"><i class="fa fa-check"></i>Organisatorisches</a></li>
+<li class="chapter" data-level="" data-path="experimentelle-versuchspläne.html"><a href="experimentelle-versuchspläne.html#wiederholung-4"><i class="fa fa-check"></i>Wiederholung</a></li>
+<li class="chapter" data-level="" data-path="experimentelle-versuchspläne.html"><a href="experimentelle-versuchspläne.html#versuchspläne"><i class="fa fa-check"></i>Versuchspläne</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="störvariablen.html"><a href="störvariablen.html"><i class="fa fa-check"></i>Störvariablen</a>
+<ul>
+<li class="chapter" data-level="" data-path="störvariablen.html"><a href="störvariablen.html#organisatorisches-6"><i class="fa fa-check"></i>Organisatorisches</a></li>
+<li class="chapter" data-level="" data-path="störvariablen.html"><a href="störvariablen.html#wiederholung-5"><i class="fa fa-check"></i>Wiederholung</a></li>
+<li class="chapter" data-level="" data-path="störvariablen.html"><a href="störvariablen.html#varianz---freund-und-feind"><i class="fa fa-check"></i>Varianz - Freund und Feind</a></li>
+<li class="chapter" data-level="" data-path="störvariablen.html"><a href="störvariablen.html#störvariablen-1"><i class="fa fa-check"></i>Störvariablen</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="literatur-2.html"><a href="literatur-2.html"><i class="fa fa-check"></i>Literatur</a></li>
+<li class="divider"></li>
+<li><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Versuchsplanung</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="experimentelle-versuchspläne" class="section level1">
+<h1>Experimentelle Versuchspläne</h1>
+<div id="organisatorisches-5" class="section level2">
+<h2>Organisatorisches</h2>
+<div id="semesterplan-6" class="section level3">
+<h3>Semesterplan</h3>
+<table class=" lightable-classic" style="font-size: 15px; font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+Sitzung
+</th>
+<th style="text-align:left;">
+Datum
+</th>
+<th style="text-align:left;">
+Sitzungstitel
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+02.11.2020
+</td>
+<td style="text-align:left;">
+Warum wissenschaftliche Psychologie
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+28.11.2020
+29.11.2020
+</td>
+<td style="text-align:left;">
+Hypothesen und der Prozess der Hypothesenprüfung
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+28.11.2020
+29.11.2020
+</td>
+<td style="text-align:left;">
+Experimentelles Vorgehen
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+28.11.2020
+29.11.2020
+</td>
+<td style="text-align:left;">
+Literaturrecherche
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+28.11.2020
+29.11.2020
+</td>
+<td style="text-align:left;">
+Operationalisieren und Messen
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:left;">
+12.12.2020
+13.12.2020
+</td>
+<td style="text-align:left;">
+Experimentelle Versuchspläne
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+12.12.2020
+13.12.2020
+</td>
+<td style="text-align:left;">
+Störvariablen im Experiment
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:left;">
+12.12.2020
+13.12.2020
+</td>
+<td style="text-align:left;">
+Nicht-experimentelle Versuchspläne
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:left;">
+12.12.2020
+13.12.2020
+</td>
+<td style="text-align:left;">
+Material und Stichprobe
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:left;">
+23.1.2021
+24.1.2021
+</td>
+<td style="text-align:left;">
+Auswertung, Darstellung und Interpretation
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:left;">
+23.1.2021
+24.1.2021
+</td>
+<td style="text-align:left;">
+Ethische Probleme im Versuch
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:left;">
+23.1.2021
+24.1.2021
+</td>
+<td style="text-align:left;">
+Publikationsprozess
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:left;">
+wird noch bekannt gegeben
+</td>
+<td style="text-align:left;">
+Vorstellung der Gruppenarbeiten
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:left;">
+wird noch bekannt gegeben
+</td>
+<td style="text-align:left;">
+Klausurvorbereitung
+</td>
+</tr>
+</tbody>
+</table>
+<!-- ## Hausaufgabe -->
+<!-- \includegraphics[width=\textwidth]{ques1.png} -->
+<!-- ## Hausaufgabe -->
+<!-- \includegraphics[width=\textwidth]{ques2.pdf} -->
+</div>
+</div>
+<div id="wiederholung-4" class="section level2">
+<h2>Wiederholung</h2>
+<div id="operationalisieren" class="section level3">
+<h3>Operationalisieren</h3>
+<p><img src="imgs/operartionalisierung.png" width="600px" style="display: block; margin: auto;" /></p>
+</div>
+<div id="qualitäts-merkmale-von-operationalisierungen-2" class="section level3">
+<h3>(Qualitäts-)Merkmale von Operationalisierungen:</h3>
+<ul>
+<li><strong><em>Divergenz</em>:</strong> Ein theoretisches Konstrukt kann durch mehrere Indikatoren operationalisiert werden, wobei jeweils verschiedene Aspekte des Konstrukts unterschiedlich gut abgebildet werden.</li>
+<li><strong><em>Konvergenz</em> :</strong> Ein empirischer Indikator operationalisiert gleichzeitig verschiedene Aspekte mehrerer Konstrukte, wobei manche besser abgebildet werden als andere.</li>
+<li><strong><em>Sensitivität</em> : </strong> „Empfindlichkeit“ mit der ein Indikator das gemeinte Konstrukt anzeigt,
+unabhängig davon ob er zusätzlich auch weitere Konstrukte anzeigt.</li>
+<li><strong><em>Selektivität/Spezifität</em> : </strong> „Präzision“ mit der ein Indikator ausschließlich das gemeinte Konstrukt
+und nicht auch weitere Konstrukte anzeigt. </li>
+</ul>
+<p><span class="math inline">\(\rightarrow\)</span> Eine Hypothese bewährt sich um so stärker, bzw. kann um so weiter generalisiert werden, je
+mehr unterschiedliche Operationalisierungen für ihre Kernkonstrukte verwendet werden.
+„Funktioniert“ nur eine bestimmte Operationalisierung ist oft fraglich welches Konstrukt eigentlich
+dahinter steht.</p>
+</div>
+<div id="validitäten-bei-experimenten-1" class="section level3">
+<h3>Validitäten bei Experimenten</h3>
+<div id="konstruktvalidität-1" class="section level4">
+<h4>Konstruktvalidität:</h4>
+<p>Gibt an, inwieweit UVn und AVn so operationalisiert sind, dass sie die jeweiligen psychologischen
+Konstrukte möglichst zutreffend repräsentieren und mit bestehenden Konstruktdefinitionen und
+Theorien übereinstimmen.</p>
+</div>
+<div id="inferenzstatistische-validität-1" class="section level4">
+<h4>Inferenzstatistische Validität:</h4>
+<p>Gibt an, inwieweit die gewählten statistischen Verfahren geeignet sind, um von einer Stichprobe
+auf Variablen in der Population zu schließen (gefährdet bei Verletzung der Voraussetzungen)</p>
+<!-- ### Validitäten bei Experimenten -->
+</div>
+<div id="interne-validität-1" class="section level4">
+<h4>Interne Validität:</h4>
+<p>Gibt an, inwieweit die Veränderungen der AV auf die Manipulation der UVn zurückgeführt und
+mögliche Alternativerklärungen durch Störeinflüsse ausgeschlossen werden können.</p>
+</div>
+<div id="externe-validität-1" class="section level4">
+<h4>Externe Validität:</h4>
+<p>Gibt an, inwieweit die Untersuchungsergebnisse übertragbar (generalisierbar) sind
+von der Stichprobe auf die Population (Repräsentativität)
+von der Laborsituation auf natürliche Situationen (ökologische Validität)</p>
+</div>
+</div>
+</div>
+<div id="versuchspläne" class="section level2">
+<h2>Versuchspläne</h2>
+<div id="wozu-überhaupt-2" class="section level3">
+<h3>Wozu überhaupt?</h3>
+<div class="cols">
+<div class="col">
+<p><img src="imgs/hypothesen_vp.png" width="450px" style="display: block; margin: auto;" /></p>
+</div>
+<div class="col">
+<p><strong>Versuchsplan/-design:</strong></p>
+<p>Strukturelles Schema der geplanten Ver-
+suchsdurchführung zur übersichtlichen
+Darstellung von:</p>
+<ul>
+<li><p>wesentlichem Ablauf der Untersuchung</p></li>
+<li><p>UVs, AVs, vorgenommene SV-Kontrollen</p></li>
+<li><p>Versuchspersonengruppierung</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="einfaktorielle-versuchspläne" class="section level3">
+<h3>Einfaktorielle Versuchspläne</h3>
+<div id="grafische-darstellung-von-versuchsplänen" class="section level4">
+<h4>Grafische Darstellung von Versuchsplänen</h4>
+<p><img src="imgs/plan1.png" width="500px" style="display: block; margin: auto;" /></p>
+<p><img src="imgs/plan2.png" width="300px" style="display: block; margin: auto;" /></p>
+<!-- \vspace{1cm} -->
+<!-- \begin{tikzpicture} -->
+<!-- \tikzset{ -->
+<!--     mylabel/.style={text width=20em} -->
+<!-- } -->
+<!-- \node[anchor=south west,inner sep=0](table) at (0,0) {\begin{tabular}{|c |c|}\hline \multicolumn{2}{|c|}{UV A}  \\ \hline Stufe a1 & Stufe a2 \\ \hline AV1.a1 & AV1.a2 \\ \hline \end{tabular}}; -->
+<!-- \node[mylabel, above right= of table](UV) {Name der UV}; -->
+<!-- \node[mylabel, right= of table](UVLev) {Stufen der UV}; -->
+<!-- \node[mylabel, below right= of table](AV) {Einzelne Versuchsbedingungen,\newline für die AV erhoben wurde}; -->
+<!-- \draw[-latex, thick,shorten >=0.5ex, shorten <=0.5ex] (UV.west) to[bend right = 15] (table.north); -->
+<!-- \draw[-latex, thick,shorten >=0.5ex, shorten <=0.5ex] (UVLev.west) to[bend right = 0] (table.east); -->
+<!-- \draw[-latex, thick,shorten >=0.5ex, shorten <=0.5ex] (AV.west) to[bend left = 15] (table.south); -->
+<!-- \node[below = 2cm of table](table2) {\begin{tabular}{|c |c|}\hline \multicolumn{2}{|c|}{Aufgabenschwierigkeit}  \\ \hline  leicht & schwer \\ \hline Fehlerzahl & Fehlerzahl \\ \hline \end{tabular}}; -->
+<!-- \end{tikzpicture} -->
+<!-- ### Einfaktorielle Versuchspläne -->
+<!-- #### Grafische Darstellung von Versuchsplänen -->
+<p><img src="imgs/plan3.png" width="750px" style="display: block; margin: auto;" /></p>
+<!-- \vspace{1cm} -->
+<!-- \begin{tikzpicture} -->
+<!-- \tikzset{ -->
+<!--     mylabel/.style={text width=5em} -->
+<!-- } -->
+<!-- \node[](table1){\begin{tabular}{|c |c|}\hline \multicolumn{2}{|c|}{UV A}  \\ \hline  Stufe a1 & -->
+<!-- Stufe a2 \\ \hline AV1.a1 & AV1.a2 \\ \hline \end{tabular}}; -->
+<!-- \node[below = of table1](table2) {\begin{tabular}{|c |c|}\hline \multicolumn{2}{|c|}{UV A}  \\ \hline Stufe a1 & -->
+<!-- Stufe a2 \\ \hline AV1.a1 & AV1.a2 \\ AV2.a1 & AV2.a2 \\ \hline \end{tabular}}; -->
+<!-- \node[right = of table1](table3) {\begin{tabular}{|c |c| c |}\hline \multicolumn{3}{|c|}{UV B}  \\ \hline Stufe b1 & -->
+<!-- Stufe b2 & Stufe b3 \\ \hline AV1.b1 & AV1.b2 & AV1.b3 \\ \hline \end{tabular}}; -->
+<!-- \node[right = of table2](table4) {\begin{tabular}{|c |c| c |}\hline \multicolumn{3}{|c|}{UV B}  \\ \hline Stufe b1 & -->
+<!-- Stufe b2 & Stufe b3 \\ \hline AV1.b1 & AV1.b2 & AV1.b3 \\ AV2.b1 & AV2.b2 & AV2.b3\\ AV3.b1 & AV3.b2 & AV3.b3\\ \hline \end{tabular}}; -->
+<!-- \end{tikzpicture} -->
+<!-- ### Einfaktorielle Versuchspläne -->
+</div>
+<div id="randomisierungspläne" class="section level4">
+<h4>Randomisierungspläne</h4>
+<p><img src="imgs/plan4.png" width="750px" style="display: block; margin: auto;" /></p>
+<!-- ### Einfaktorielle Versuchspläne -->
+<!-- #### Randomisierungspläne -->
+<ul>
+<li>Zufällige Aufteilung der VP auf <span class="math inline">\(\geq 2\)</span> Gruppen</li>
+<li>Gruppenzugehörigkeit <span class="math inline">\(\Leftrightarrow\)</span> UV-Stufe
+<ul>
+<li>UV ist unabhängig / Zwischen-Gruppen-Faktor</li>
+</ul></li>
+</ul>
+<div class="cols">
+<div class="col">
+<p><strong>Vorteile</strong></p>
+<ul>
+<li><p>Einfache Umsetzung</p></li>
+<li><p>Organismusvariablen werden zufällig auf Bedingungen aufgeteilt, damit kontrolliert</p></li>
+</ul>
+</div>
+<div class="col">
+<p><strong>Nachteile</strong></p>
+<ul>
+<li><p>Erfordert aureichend große Stichprobe</p></li>
+<li><p>Zufallsvarianz wird künstlich erhöht</p></li>
+</ul>
+</div>
+</div>
+<!-- ### Einfaktorielle Versuchspläne -->
+</div>
+<div id="messwiederholungspläne" class="section level4">
+<h4>Messwiederholungspläne</h4>
+<p><img src="imgs/plan5.png" width="750px" style="display: block; margin: auto;" /></p>
+<!-- ### Einfaktorielle Versuchspläne -->
+<!-- #### Messwiederholungspläne -->
+<ul>
+<li>Mehrfache Messung der <em>selben</em> VP in <span class="math inline">\(\geq 2\)</span> Bedingungen</li>
+<li>Bedingung <span class="math inline">\(\Leftrightarrow\)</span> UV-Stufe
+<ul>
+<li>UV ist abhängig / Intra-Gruppen-Faktor</li>
+</ul></li>
+</ul>
+<div class="cols">
+<div class="col">
+<p><strong>Vorteile</strong></p>
+<ul>
+<li><p>Kontrolliert Organismusvariablen durch “konstanthalten” in VP</p></li>
+<li><p>Reduziert Zufallsvarianz</p></li>
+<li><p>Reduziert nötige Stichprobengröße</p></li>
+<li><p>Vorher-Nachher-Aussagen möglich</p></li>
+<li><p>zeigt ggf. Baseline-Unterschiede auf</p></li>
+</ul>
+</div>
+<div class="col">
+<p><strong>Nachteile</strong></p>
+<ul>
+<li><p>Reihenfolge-, Test-, Reaktivitäts- und Ermüdungseffekte usw. möglich</p></li>
+<li><p>Aufwand/Kosten können durch Mehrfachmessung erhöht werden</p></li>
+</ul>
+</div>
+</div>
+<!-- ### Einfaktorielle Versuchspläne -->
+</div>
+<div id="blockversuchspläne" class="section level4">
+<h4>Blockversuchspläne</h4>
+<p><img src="imgs/plan6.png" width="750px" style="display: block; margin: auto;" /></p>
+<!-- ### Einfaktorielle Versuchspläne -->
+<!-- #### Blockversuchspläne -->
+<ul>
+<li>Gezielte Aufteilung der VPn in <span class="math inline">\(\geq 2\)</span> Gruppen nach Ausprägung einer SV</li>
+<li>‘SV-Stufe’ <span class="math inline">\(\Leftrightarrow\)</span> UV-Stufe
+<ul>
+<li>UV ist unabhängig / Zwischen-Gruppen-Faktor (bei <em>sehr</em> strengem “Matching” können sich auch Abhängigkeiten geben.)</li>
+</ul></li>
+</ul>
+<div class="cols">
+<div class="col">
+<p><strong>Vorteile</strong></p>
+<ul>
+<li><p>starke Kontrolle einer SV, auch bei kleinem N</p></li>
+<li><p>reduzierte Zufallsvarianz</p></li>
+</ul>
+</div>
+<div class="col">
+<p><strong>Nachteile</strong></p>
+<ul>
+<li><p>SV muss bekannt und messbar sein, um zur Blockbildung genutzt werden zu können</p></li>
+<li><p>mehr als ein Blockbildungsfaktor führt zu hohem technischem und finanziellem Aufwand</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="mehrfaktorielle-versuchspläne" class="section level3">
+<h3>Mehrfaktorielle Versuchspläne</h3>
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; ; margin-left: auto; margin-right: auto; height: 200px; " id="tab:unnamed-chunk-109">
+<caption style="caption-side: top; text-align: center;"><span id="tab:unnamed-chunk-109">Tab. 6: </span> </caption><col><col><col><col><col><tr>
+<td rowspan="2" colspan="2" style="vertical-align: middle; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></td><td colspan="3" style="vertical-align: middle; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">UV B</td></tr>
+<tr>
+<td style="vertical-align: middle; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Stufe b1</td><td style="vertical-align: middle; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Stufe b2</td><td style="vertical-align: middle; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Stufe b3</td></tr>
+<tr>
+<td rowspan="2" style="vertical-align: middle; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">UV A</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Stufe a1</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">AV1.a1b1</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">AV1.a1b2</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">AV1.a1b3</td></tr>
+<tr>
+<td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Stufe a2</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">AV1.a2b1</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">AV1.a2b2</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">AV1.a2b3</td></tr>
+</table>
+
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; ; margin-left: auto; margin-right: auto; height: 200px; " id="tab:unnamed-chunk-110">
+<caption style="caption-side: top; text-align: center;"><span id="tab:unnamed-chunk-110">Tab. 7: </span> </caption><col><col><col><col><col><tr>
+<td rowspan="2" colspan="2" style="vertical-align: middle; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></td><td colspan="3" style="vertical-align: middle; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Substanz</td></tr>
+<tr>
+<td style="vertical-align: middle; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Cannabis</td><td style="vertical-align: middle; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Koffein</td><td style="vertical-align: middle; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Alkohol</td></tr>
+<tr>
+<td rowspan="2" style="vertical-align: middle; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Ausnüchterung</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">keine</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">d2</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">d2</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">d2</td></tr>
+<tr>
+<td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Ohrfeige</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">d2</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">d2</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">d2</td></tr>
+</table>
+
+<!-- ### Mehrfaktorielle Versuchspläne {.smaller} -->
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; ; margin-left: auto; margin-right: auto; height: 300px; " id="tab:unnamed-chunk-111">
+<caption style="caption-side: top; text-align: center;"><span id="tab:unnamed-chunk-111">Tab. 8: </span> </caption><col><col><col><col><col><col><col><col><tr>
+<td rowspan="4" colspan="4" style="vertical-align: middle; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.4pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></td><td colspan="4" style="vertical-align: middle; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Komplexität</td></tr>
+<tr>
+<td colspan="2" style="vertical-align: middle; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">hoch</td><td colspan="2" style="vertical-align: middle; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">niedrig</td></tr>
+<tr>
+<td colspan="2" style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Geschlecht</td><td colspan="2" style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Geschlecht</td></tr>
+<tr>
+<td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">m</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">w</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">m</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">w</td></tr>
+<tr>
+<td rowspan="4" style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Stress</td><td rowspan="2" style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">hoch</td><td rowspan="2" style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Schwierigkeit</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">steigend</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Leistung</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Leistung</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Leistung</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Leistung</td></tr>
+<tr>
+<td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">sinkend</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Leistung</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Leistung</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Leistung</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Leistung</td></tr>
+<tr>
+<td rowspan="2" style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">niedrig</td><td rowspan="2" style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Schwierigkeit</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">steigend</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Leistung</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Leistung</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Leistung</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Leistung</td></tr>
+<tr>
+<td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">sinkend</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Leistung</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Leistung</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Leistung</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Leistung</td></tr>
+</table>
+
+<!-- ### Mehrfaktorielle Versuchspläne -->
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; ; margin-left: auto; margin-right: auto; height: 500px; " id="tab:unnamed-chunk-112">
+<caption style="caption-side: top; text-align: center;"><span id="tab:unnamed-chunk-112">Tab. 9: </span> </caption><col style="width: 10%"><col style="width: 10%"><col style="width: 10%"><col style="width: 30%"><col style="width: 10%"><col style="width: 30%"><tr style="height: 5.56%;">
+<td style="vertical-align: middle; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></td><td style="vertical-align: middle; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></td><td colspan="4" style="vertical-align: middle; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Komplexität</td></tr>
+<tr style="height: 5.56%;">
+<td style="vertical-align: middle; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></td><td style="vertical-align: middle; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></td><td colspan="2" style="vertical-align: middle; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.4pt 0pt;   border-bottom-color: rgb(255, 255, 255);  padding: 6pt 6pt 6pt 6pt; font-weight: normal;">niedrig</td><td colspan="2" style="vertical-align: middle; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0pt 0.4pt 0pt;   border-bottom-color: rgb(255, 255, 255);  padding: 6pt 6pt 6pt 6pt; font-weight: normal;">hoch</td></tr>
+<tr style="height: 22.2%;">
+<td rowspan="4" style="vertical-align: middle; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Stress</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.4pt 0pt 0pt;  border-right-color: rgb(255, 255, 255);   padding: 6pt 6pt 6pt 6pt; font-weight: normal;">niedrig</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0.4pt 0.4pt; border-top-color: rgb(255, 255, 255);   border-bottom-color: rgb(255, 255, 255);  border-left-color: rgb(255, 255, 255); padding: 6pt 6pt 6pt 6pt; background-color: rgb(204, 102, 80); font-weight: normal;"><span style="color: rgb(255, 255, 255);"></span></td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0pt; border-top-color: rgb(255, 255, 255);  border-right-color: rgb(255, 255, 255);  border-bottom-color: rgb(255, 255, 255);  padding: 6pt 6pt 6pt 6pt; background-color: rgb(0, 51, 204); font-weight: normal;"><span style="color: rgb(255, 255, 255);">steigende Schwierigkeit</span></td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0.4pt 0.4pt; border-top-color: rgb(255, 255, 255);   border-bottom-color: rgb(255, 255, 255);  border-left-color: rgb(255, 255, 255); padding: 6pt 6pt 6pt 6pt; background-color: rgb(204, 102, 80); font-weight: normal;"><span style="color: rgb(255, 255, 255);"></span></td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0pt; border-top-color: rgb(255, 255, 255);  border-right-color: rgb(255, 255, 255);  border-bottom-color: rgb(255, 255, 255);  padding: 6pt 6pt 6pt 6pt; background-color: rgb(0, 51, 204); font-weight: normal;"><span style="color: rgb(255, 255, 255);">steigende Schwierigkeit</span></td></tr>
+<tr style="height: 22.2%;">
+<td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.4pt 0pt 0pt;  border-right-color: rgb(255, 255, 255);   padding: 6pt 6pt 6pt 6pt; font-weight: normal;">hoch</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0.4pt 0.4pt; border-top-color: rgb(255, 255, 255);   border-bottom-color: rgb(255, 255, 255);  border-left-color: rgb(255, 255, 255); padding: 6pt 6pt 6pt 6pt; background-color: rgb(255, 153, 128); font-weight: normal;"><span style="color: rgb(255, 255, 255);"></span></td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0pt; border-top-color: rgb(255, 255, 255);  border-right-color: rgb(255, 255, 255);  border-bottom-color: rgb(255, 255, 255);  padding: 6pt 6pt 6pt 6pt; background-color: rgb(51, 102, 255); font-weight: normal;"><span style="color: rgb(255, 255, 255);">sinkende Schwierigkeit</span></td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0.4pt 0.4pt; border-top-color: rgb(255, 255, 255);   border-bottom-color: rgb(255, 255, 255);  border-left-color: rgb(255, 255, 255); padding: 6pt 6pt 6pt 6pt; background-color: rgb(255, 153, 128); font-weight: normal;"><span style="color: rgb(255, 255, 255);"></span></td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0pt; border-top-color: rgb(255, 255, 255);  border-right-color: rgb(255, 255, 255);  border-bottom-color: rgb(255, 255, 255);  padding: 6pt 6pt 6pt 6pt; background-color: rgb(51, 102, 255); font-weight: normal;"><span style="color: rgb(255, 255, 255);">sinkende Schwierigkeit</span></td></tr>
+<tr style="height: 22.2%;">
+<td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.4pt 0pt 0pt;  border-right-color: rgb(255, 255, 255);   padding: 6pt 6pt 6pt 6pt; font-weight: normal;">niedrig</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0.4pt 0.4pt; border-top-color: rgb(255, 255, 255);   border-bottom-color: rgb(255, 255, 255);  border-left-color: rgb(255, 255, 255); padding: 6pt 6pt 6pt 6pt; background-color: rgb(204, 102, 80); font-weight: normal;"><span style="color: rgb(255, 255, 255);"></span></td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0pt; border-top-color: rgb(255, 255, 255);  border-right-color: rgb(255, 255, 255);  border-bottom-color: rgb(255, 255, 255);  padding: 6pt 6pt 6pt 6pt; background-color: rgb(0, 51, 204); font-weight: normal;"><span style="color: rgb(255, 255, 255);">steigende Schwierigkeit</span></td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0.4pt 0.4pt; border-top-color: rgb(255, 255, 255);   border-bottom-color: rgb(255, 255, 255);  border-left-color: rgb(255, 255, 255); padding: 6pt 6pt 6pt 6pt; background-color: rgb(204, 102, 80); font-weight: normal;"><span style="color: rgb(255, 255, 255);"></span></td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0pt; border-top-color: rgb(255, 255, 255);  border-right-color: rgb(255, 255, 255);  border-bottom-color: rgb(255, 255, 255);  padding: 6pt 6pt 6pt 6pt; background-color: rgb(0, 51, 204); font-weight: normal;"><span style="color: rgb(255, 255, 255);">steigende Schwierigkeit</span></td></tr>
+<tr style="height: 22.2%;">
+<td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.4pt 0pt 0pt;  border-right-color: rgb(255, 255, 255);   padding: 6pt 6pt 6pt 6pt; font-weight: normal;">hoch</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0.4pt 0.4pt; border-top-color: rgb(255, 255, 255);   border-bottom-color: rgb(255, 255, 255);  border-left-color: rgb(255, 255, 255); padding: 6pt 6pt 6pt 6pt; background-color: rgb(255, 153, 128); font-weight: normal;"><span style="color: rgb(255, 255, 255);"></span></td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0pt; border-top-color: rgb(255, 255, 255);  border-right-color: rgb(255, 255, 255);  border-bottom-color: rgb(255, 255, 255);  padding: 6pt 6pt 6pt 6pt; background-color: rgb(51, 102, 255); font-weight: normal;"><span style="color: rgb(255, 255, 255);">sinkende Schwierigkeit</span></td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0pt 0.4pt 0.4pt; border-top-color: rgb(255, 255, 255);   border-bottom-color: rgb(255, 255, 255);  border-left-color: rgb(255, 255, 255); padding: 6pt 6pt 6pt 6pt; background-color: rgb(255, 153, 128); font-weight: normal;"><span style="color: rgb(255, 255, 255);"></span></td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0pt; border-top-color: rgb(255, 255, 255);  border-right-color: rgb(255, 255, 255);  border-bottom-color: rgb(255, 255, 255);  padding: 6pt 6pt 6pt 6pt; background-color: rgb(51, 102, 255); font-weight: normal;"><span style="color: rgb(255, 255, 255);">sinkende Schwierigkeit</span></td></tr>
+</table>
+
+</div>
+<div id="übung-1" class="section level3">
+<h3>Übung</h3>
+<p>Beantworten Sie für die ausgeteilten Artikel folgende Frage- &amp; Aufgabestellung:</p>
+<ul>
+<li>Um welche Art von Studie handelt es sich bei der beschriebenen wissenschaftlichen Untersuchung?
+<ul>
+<li>Experiment, Quasiexperiment, …</li>
+</ul></li>
+<li>Was könnte eine mögliche Hypothese sein, die der Studie zugrunde liegt?</li>
+<li>Was sind UV(s), AV(s), evtl. kontrollierte Störvariablen/nicht kontrollierte Störvariablen?
+<ul>
+<li>Wenn genauer beschrieben, wie wurden diese operationalisiert?</li>
+<li>Ist/Sind die UV(s) abhängig oder unabhängig?</li>
+</ul></li>
+<li>Stellen Sie das Studiendesign tabellarisch dar.</li>
+</ul>
+</div>
+<div id="hausaufgabe-1" class="section level3">
+<h3>Hausaufgabe</h3>
+<p>Huber, Kapitel 6 &amp; 7, Seiten 169 - 193</p>
+
+<!-- # --- -->
+<!-- title: 'Psy_B_4: Versuchsplanung - Kapitel 7' -->
+<!-- subtitle: 'Störvariablen im Experiment' -->
+<!-- author: "Maren Hinck und Max Brede" -->
+<!-- output: -->
+<!--  ##### beamer_presentation: -->
+<!--  #####   includes: -->
+<!--  #####       in_header: /home/brede/MEGA/Andres/Header/header_beamer.tex -->
+<!--  #####   theme: "default" -->
+<!--  #####   slide_level: 3 -->
+<!--  #####   incremental: false -->
+<!--  #####   colortheme: "sidebartab" -->
+<!--    ioslides_presentation: -->
+<!--      transition: faster -->
+<!--      css: /home/brede/MEGA/Honorar/111220_KfN/styles.css -->
+<!--      slide_level: 3 -->
+<!-- widescreen: true -->
+<!-- bibliography: references.bib -->
+<!-- csl: /home/brede/MEGA/Andres/Header/dgps.csl -->
+<!-- --- -->
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="operationalisieren-und-messen.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="störvariablen.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Versuchsplanung_WS20.pdf"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
