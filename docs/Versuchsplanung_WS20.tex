@@ -143,7 +143,7 @@
 
 \title{Versuchsplanung}
 \author{Max Brede und Maren Hinck}
-\date{2020-12-06}
+\date{2020-12-10}
 
 \begin{document}
 \maketitle
@@ -3672,13 +3672,7 @@ Wir überprüfen die Wirkung einer neuen Therapie
   Abhängige Variable: Wert im Depressionsfragebogen nach 5 Wochen
 \end{itemize}
 
-\hypertarget{beispiel-1}{%
-\subsection{Beispiel}\label{beispiel-1}}
-
 \begin{center}\includegraphics[width=200pt]{Versuchsplanung_WS20_files/figure-latex/unnamed-chunk-122-1} \end{center}
-
-\hypertarget{beispiel-2}{%
-\subsection{Beispiel}\label{beispiel-2}}
 
 \href{https://mbrede.shinyapps.io/VPlanung/}{Varianzzerlegung}
 
@@ -3732,9 +3726,6 @@ kann nicht mehr im ursprünglichen Sinne interpretiert werden.
   In jede Gruppe / Bedingung wird einer von zwei Matchingpartnern gelost, der die
   gleichen Ausprägungen der Störvariablen hat
 \end{itemize}
-
-\hypertarget{kontrolle-von-stuxf6rvariablen-der-vpn-1}{%
-\subsection{Kontrolle von Störvariablen der VPn}\label{kontrolle-von-stuxf6rvariablen-der-vpn-1}}
 
 \textbf{Randomisieren:}
 
@@ -3889,16 +3880,7 @@ kann nicht mehr im ursprünglichen Sinne interpretiert werden.
   Soziale Erwünschtheit
 \end{itemize}
 
-\hypertarget{kontrolle-von-stuxf6rvariablen-1}{%
-\subsection{Kontrolle von Störvariablen}\label{kontrolle-von-stuxf6rvariablen-1}}
-
 Übung
-
-\hypertarget{kontrolle-von-stuxf6rvariablen-2}{%
-\subsection{Kontrolle von Störvariablen}\label{kontrolle-von-stuxf6rvariablen-2}}
-
-\hypertarget{erwartungseffekte-1}{%
-\subsubsection{Erwartungseffekte}\label{erwartungseffekte-1}}
 
 \begin{itemize}
 \item
@@ -3938,9 +3920,6 @@ kann nicht mehr im ursprünglichen Sinne interpretiert werden.
   Insbesondere Standardisierung von non-verbalem Ausdruck
 \end{itemize}
 
-\hypertarget{kontrolle-von-stuxf6rvariablen-des-vl-1}{%
-\subsection{Kontrolle von Störvariablen des VL}\label{kontrolle-von-stuxf6rvariablen-des-vl-1}}
-
 \textbf{Manipulation der Erwartungen des VL:}
 
 \begin{itemize}
@@ -3957,10 +3936,755 @@ kann nicht mehr im ursprünglichen Sinne interpretiert werden.
   kennt der VL die aktuelle Versuchsbedingung nicht, können seine Erwartungen nicht systematisch wirksam werden
 \end{itemize}
 
-\hypertarget{hausaufgabe-2}{%
-\subsection{Hausaufgabe}\label{hausaufgabe-2}}
+\hypertarget{nicht-experimentelle-versuchspluxe4ne}{%
+\chapter{nicht-experimentelle Versuchspläne}\label{nicht-experimentelle-versuchspluxe4ne}}
 
-Huber, Kapitel 8, Seiten 195 - 202
+\hypertarget{organisatorisches-7}{%
+\section{Organisatorisches}\label{organisatorisches-7}}
+
+\hypertarget{semesterplan-8}{%
+\subsection{Semesterplan}\label{semesterplan-8}}
+
+\begin{tabular}[t]{rll}
+\toprule
+Sitzung & Datum & Sitzungstitel\\
+\midrule
+1 & 02.11.2020 & Warum wissenschaftliche Psychologie\\
+2 & 28.11.2020
+29.11.2020 & Hypothesen und der Prozess der Hypothesenprüfung\\
+3 & 28.11.2020
+29.11.2020 & Experimentelles Vorgehen\\
+4 & 28.11.2020
+29.11.2020 & Literaturrecherche\\
+5 & 28.11.2020
+29.11.2020 & Operationalisieren und Messen\\
+\addlinespace
+6 & 12.12.2020
+13.12.2020 & Experimentelle Versuchspläne\\
+7 & 12.12.2020
+13.12.2020 & Störvariablen im Experiment\\
+8 & 12.12.2020
+13.12.2020 & Nicht-experimentelle Versuchspläne\\
+9 & 12.12.2020
+13.12.2020 & Material und Stichprobe\\
+10 & 23.1.2021
+24.1.2021 & Auswertung, Darstellung und Interpretation\\
+\addlinespace
+11 & 23.1.2021
+24.1.2021 & Ethische Probleme im Versuch\\
+12 & 23.1.2021
+24.1.2021 & Publikationsprozess\\
+13 & wird noch bekannt gegeben & Vorstellung der Gruppenarbeiten\\
+14 & wird noch bekannt gegeben & Klausurvorbereitung\\
+\bottomrule
+\end{tabular}
+
+\hypertarget{wiederholung-6}{%
+\section{Wiederholung}\label{wiederholung-6}}
+
+\hypertarget{varianz-der-abhuxe4ngigen-variable-1}{%
+\subsection{Varianz der abhängigen Variable}\label{varianz-der-abhuxe4ngigen-variable-1}}
+
+\begin{cols}
+
+\begin{col}{0.48\textwidth}
+
+\textbf{Sehr wenig Varianz}
+
+Graue Flecken an den Kreuzungen
+
+\begin{tikzpicture}
+  \fill [Black] (0,0) rectangle (1.2,1.2);
+  \fill [Black] (0,1.5) rectangle (1.2,2.7);
+  \fill [Black] (0,3) rectangle (1.2,4.2);
+
+
+  \fill [Black] (1.5,0) rectangle (2.7,1.2);
+  \fill [Black] (1.5,1.5) rectangle (2.7,2.7);
+  \fill [Black] (1.5,3) rectangle (2.7,4.2);
+
+  \fill [Black] (3,0) rectangle (4.2,1.2);
+  \fill [Black] (3,1.5) rectangle (4.2,2.7);
+  \fill [Black] (3,3) rectangle (4.2,4.2);
+\end{tikzpicture}
+
+\end{col}
+
+\begin{col}{0.48\textwidth}
+
+\textbf{Sehr viel Varianz}
+
+Die Attraktivität dieses Mannes
+
+\begin{center}\includegraphics[width=66.6666666666667pt]{imgs/copyright} \end{center}
+
+\end{col}
+
+\end{cols}
+
+\begin{center}\includegraphics[width=200pt]{imgs/varianzen} \end{center}
+
+\hypertarget{quasiexperimentelle-designs}{%
+\section{Quasiexperimentelle Designs}\label{quasiexperimentelle-designs}}
+
+\hypertarget{trendanalyse}{%
+\subsection{Trendanalyse}\label{trendanalyse}}
+
+Beispiel 1: nicht-linearer Zusammenhang zwischen UV und AV erwartet
+
+\begin{figure}
+
+{\centering \includegraphics[width=200pt]{Versuchsplanung_WS20_files/figure-latex/unnamed-chunk-130-1} 
+
+}
+
+\caption{Yerkes-Dodson-Gesetz}\label{fig:unnamed-chunk-130}
+\end{figure}
+
+Beispiel 2: Dosis-Wirkbeziehung soll untersucht werden
+
+\begin{figure}
+
+{\centering \includegraphics[width=200pt]{imgs/copyright} 
+
+}
+
+\caption{Aus @dicastelnuovoAlcoholDosingTotal2006.}\label{fig:unnamed-chunk-131}
+\end{figure}
+
+\begin{quote}
+\emph{Conclusions: Low levels of alcohol intake (1-2 drinks
+per day for women and 2-4 drinks per day for men) are
+inversely associated with total mortality in both men and
+women. Our findings, while confirming the hazards of
+excess drinking, indicate potential windows of alcohol
+intake that may confer a net beneficial effect of moder-
+ate drinking, at least in terms of survival.} \citep{dicastelnuovoAlcoholDosingTotal2006}
+\end{quote}
+
+\hypertarget{nicht-uxe4quivalente-kontrollgruppen}{%
+\subsection{nicht-äquivalente Kontrollgruppen}\label{nicht-uxe4quivalente-kontrollgruppen}}
+
+\begin{itemize}
+\tightlist
+\item
+  Auswirkungen einer bestimmten Unterrichtsmethode auf Schülerleistung
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Vergleich von zwei Klassen mit Methode A vs.~B
+  \item
+    Klassen unterscheiden sich in vielen Merkmalen \ldots{}
+  \item
+    Natürliche Entwicklung oder Entwicklungspotenzial kann sich unterscheiden \ldots{}
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{kontrolle-von-stuxf6rvariablen-1}{%
+\subsubsection{Kontrolle von Störvariablen:}\label{kontrolle-von-stuxf6rvariablen-1}}
+
+\begin{itemize}
+\item
+  Hypothesen aufstellen, was relevante Störvariablen sein könnten (Literatur!)
+\item
+  Störvariablen zumindest messen und ggf. statistisch kontrollieren („rausrechnen``)
+\item
+  Möglichst viele Klassen untersuchen
+\end{itemize}
+
+Beispiel: Token-System in Schulklassen
+
+\begin{center}\begin{tabular}{| c |  c | c | c |}
+ \cline{3-4} 
+  \multicolumn{2}{c|}{ } & \multicolumn{2}{c|}{Messzeitpunkt}\\
+  \cline{3-4} 
+  \multicolumn{2}{c|}{ }& pre & post\\
+    \hline
+    \multirow{2}{*}{Tokensystem} &ja (Klasse A) &  {\cellcolor{LightGray}}\# Meldungen& {\cellcolor{LightGray}}\# Meldungen\\
+    \hhline{*{1}{|~}*{3}{|-}|}
+    & nein (Klasse B) &  {\cellcolor{LightGray}}\# Meldungen& {\cellcolor{LightGray}}\# Meldungen\\
+    \hline
+ \end{tabular} \end{center}
+
+\hypertarget{zeitreihenversuchspluxe4ne}{%
+\subsection{Zeitreihenversuchspläne}\label{zeitreihenversuchspluxe4ne}}
+
+Wir beobachten jetzt das folgende Ergebnis:
+
+\begin{center}\includegraphics[width=200pt]{Versuchsplanung_WS20_files/figure-latex/unnamed-chunk-133-1} \end{center}
+
+Ist unsere Intervention wirksam?
+
+\begin{center}\includegraphics[width=200pt]{Versuchsplanung_WS20_files/figure-latex/unnamed-chunk-134-1} \end{center}
+
+\textbf{Zeitreihe}
+
+Mehrfache Messung der selben Vpn, bzw. allgemein der
+Beobachtungseinheiten, in \(>\) 2 Bedingungen. Jede Vp ist immer allen
+Bedingungen zugeordnet (jede Beobachtungseinheit allen Stufen des Faktors).
+
+\textbf{UV:}
+
+Messwiederholungsfaktor mit mehr als 2 Stufen (oft sowohl mehrere Vorher-
+als auch Nachhermessungen)
+
+\textbf{Vorteile:}
+
+Kann besser zwischen zufälligen Schwankungen, „Zeit``-Effekten und UV-Einfluss
+unterscheiden als bei nur einer Vorher- bzw. Nachhermessung
+
+\textbf{Nachteile:}
+
+Abgrenzung von Effekten der UV gegenüber Störeinflüssen der „Zeit`` ohne
+Kontrollgruppe nicht eindeutig
+
+\hypertarget{bedrohung-der-internen-validituxe4t}{%
+\subsection{Bedrohung der internen Validität}\label{bedrohung-der-internen-validituxe4t}}
+
+Bedrohungen der internen Validität in quasi-experimentellen Designs
+(nach Campbell \& Stanley, 1966; siehe auch Sarris \& Reiß, 2005, S. 73f):
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Zeitgeschehen} (\emph{history}): unerwartete Ereignisse , Effekt geht nicht auf das
+  Treatment, sondern auf ein anderes Ereignis zwischen Pretest und Posttest
+  zurück
+\item
+  \textbf{Reifung} (\emph{maturation}): natürliche Entwicklung, Effekt geht auf biologische
+  oder psychosoziale Entwicklung zwischen den Messzeitpunkten zurück
+\item
+  \textbf{Testwiederholung} (\emph{test sophistication}): Einfluss der Vormessung, Effekt wird
+  durch Lern- oder Erinnerungseffekt aufgrund früherer Messung verzerrt
+\item
+  \textbf{Testveränderung} (\emph{instrumentation}): veränderte Messung, Effekt ändert sich
+  durch Wechsel des eingesetzten Instruments oder der Beobachter zwischen
+  den Messungen
+\item
+  \textbf{Statistische Regression} (\emph{regression to the mean}) Extreme mitteln sich aus, bei Gruppenaufteilung nach Vormessungin hohe und niedrige Werte führt der
+  statistische Fehlerausgleich bei der Nachmessung zu weniger extremen
+  Unterschieden
+\item
+  \textbf{Auswahlverzerrung} (\emph{selection bias}) Unterschiede vor Treatment, Effekt des
+  Treatment wird bei fehlender Randomisierung durch bestehende systematische
+  Unterschiede überlagert, Verzerrungen können ferner durch Interaktion der
+  Vorauswahl mit anderen Validitätsbedrohungen entstehen
+\item
+  \textbf{Ausfalleffekte} (\emph{experimental mortality}) Unterschiede nach Treatment, Effekt im
+  Posttest wird konfundiert durch systematische Unterschiede zwischen
+  ausgefallenen und verbliebenen Vpn.
+\item
+  \textbf{Versuchsleitereffekte} (\emph{experimenter-bias})
+\item
+  \textbf{Interaktive Effekte / Übertragungseffekte} (\emph{carry-over effects})
+\end{enumerate}
+
+\hypertarget{ex-post-facto-studien}{%
+\section{Ex-post-Facto-Studien}\label{ex-post-facto-studien}}
+
+\begin{itemize}
+\item
+  suchen rückblickend („ex post`` \(\approx\) im Nachhinein) aus der Beobachtung der AVn
+  nach den diese verursachenden UVn.
+\item
+  sie lassen keine Manipulation der UVn zu, da deren Auswirkungen bereits
+  eingetreten sind, oder diese nicht systematisch manipulierbar sind (z.B.
+  Organismusvariablen).
+\item
+  sie dienen der Bestandsaufnahme und der Hypothesengenerierung,
+  lassen aber keine echten Kausalaussagen zu.
+\item
+  eine begrenzte „Kontrolle`` von (vermuteten) Störvariablen ist nur statistisch
+  über Subgruppenbildung o.Ä. möglich.
+\end{itemize}
+
+\textbf{1. Ethische Gründe:}
+
+\begin{itemize}
+\tightlist
+\item
+  z.B. Untersuchungen zu Auswirkungen des Rauchens
+\item
+  z.B. Untersuchungen der Effektivität etablierter Therapien
+\end{itemize}
+
+\textbf{2. Praktische Gründe:}
+
+\begin{itemize}
+\tightlist
+\item
+  z.B. Untersuchung von Auswirkungen von Schizophrenie auf Arbeitsgedächtnis
+\item
+  z.B. Untersuchung des Einflusses von Alter auf die Impulskontrolle
+\end{itemize}
+
+\hypertarget{quer--vs-luxe4ngsschnittuntersuchungen}{%
+\subsection{Quer- vs Längsschnittuntersuchungen}\label{quer--vs-luxe4ngsschnittuntersuchungen}}
+
+\begin{itemize}
+\item
+  Alter als UV \(\rightarrow\) nicht aktiv zu variieren
+\item
+  \textbf{Querschnittuntersuchung:} Einmalige Untersuchung einer Stichprobe von in verschiedenen Altersgruppen (Kohorten) zum gleichen Zeitpunkt
+
+  \begin{itemize}
+  \tightlist
+  \item
+    (Alter between-subject UV)
+  \item
+    ermöglicht die Untersuchung von Kohorten-/Alterseffekten
+  \end{itemize}
+\item
+  \textbf{Längsschnittuntersuchungen:} Mehrfache Untersuchung einer Stichprobe von gleichaltrigen Individuen (Kohorte) in verschiedenen Altersstufen zu unterschiedlichen Zeitpunkten
+
+  \begin{itemize}
+  \tightlist
+  \item
+    (within-subject UV)
+  \item
+    ermöglicht die Untersuchung von individuellen Verläufen und somit die zukünftige Erstellung von Prognosen
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{korrelative-untersuchungen}{%
+\subsection{Korrelative Untersuchungen}\label{korrelative-untersuchungen}}
+
+\begin{itemize}
+\tightlist
+\item
+  korrelativer Zusammenhang zweier oder mehrerer nicht manipulierter Variablen.
+\item
+  Auch regressionsanalytische Ansätze: Vorhersage von Y (AV) auf Basis von X (UV)
+\item
+  Es kann nicht auf einen Kausalzusammenhang geschlossen werden.
+\item
+  Eine begrenzte „Kontrolle`` von (vermuteten) Störvariablen ist nur statistisch über Partialkorrelationen o.Ä. möglich.
+\end{itemize}
+
+Die Korrelationsforschung hat dennoch einen \textbf{hohen Stellwert} für die experimentelle Forschung:
+
+\begin{itemize}
+\tightlist
+\item
+  Bestimmung von Reliabilität und Validität mittels korrelativer Verfahren
+\item
+  Korrelatives Designing im Zusammenhang mit Blockversuchsplänen und semiexperimentellen Mischversuchsplänen (\(\rightarrow\) mehrfaktorielle Pläne bei denen eine aber nicht alle UVs echt experimentell sind)
+\item
+  Korrelativ-statistische Kontrolle von Störvariablen oder inhomogener Manipulation der UV (\(\rightarrow\) Kovarianzanalyse)
+\end{itemize}
+
+Ist der Testkennwert TMT-B/A ein geeigneter Indikator zur Erfassung kognitiver Flexibilität?
+
+\begin{center}\includegraphics[width=250pt]{imgs/copyright} \end{center}
+
+\begin{center}\includegraphics[width=250pt]{imgs/copyright} \end{center}
+
+\hypertarget{1}{}
+\begin{center}\includegraphics[width=250pt]{Versuchsplanung_WS20_files/figure-latex/unnamed-chunk-138-1} \end{center}
+
+\hypertarget{2}{}
+\begin{center}\includegraphics[width=250pt]{Versuchsplanung_WS20_files/figure-latex/unnamed-chunk-139-1} \end{center}
+
+\hypertarget{nicht-experimentelle-untersuchungen}{%
+\section{Nicht-experimentelle Untersuchungen}\label{nicht-experimentelle-untersuchungen}}
+
+\hypertarget{beispiele}{%
+\subsubsection{Beispiele:}\label{beispiele}}
+
+\begin{itemize}
+\tightlist
+\item
+  Einmalige Untersuchung einer Gruppe vor und nach Intervention
+\item
+  Einmaliger Vergleich von zwei Gruppen nach Intervention
+\item
+  Einzelfallbericht
+\item
+  Anwendungsbeobachtung
+\end{itemize}
+
+\hypertarget{material-und-stichprobe}{%
+\chapter{Material und Stichprobe}\label{material-und-stichprobe}}
+
+\hypertarget{organisatorisches-8}{%
+\section{Organisatorisches}\label{organisatorisches-8}}
+
+\hypertarget{semesterplan-9}{%
+\subsection{Semesterplan}\label{semesterplan-9}}
+
+\begin{tabular}[t]{rll}
+\toprule
+Sitzung & Datum & Sitzungstitel\\
+\midrule
+1 & 02.11.2020 & Warum wissenschaftliche Psychologie\\
+2 & 28.11.2020
+29.11.2020 & Hypothesen und der Prozess der Hypothesenprüfung\\
+3 & 28.11.2020
+29.11.2020 & Experimentelles Vorgehen\\
+4 & 28.11.2020
+29.11.2020 & Literaturrecherche\\
+5 & 28.11.2020
+29.11.2020 & Operationalisieren und Messen\\
+\addlinespace
+6 & 12.12.2020
+13.12.2020 & Experimentelle Versuchspläne\\
+7 & 12.12.2020
+13.12.2020 & Störvariablen im Experiment\\
+8 & 12.12.2020
+13.12.2020 & Nicht-experimentelle Versuchspläne\\
+9 & 12.12.2020
+13.12.2020 & Material und Stichprobe\\
+10 & 23.1.2021
+24.1.2021 & Auswertung, Darstellung und Interpretation\\
+\addlinespace
+11 & 23.1.2021
+24.1.2021 & Ethische Probleme im Versuch\\
+12 & 23.1.2021
+24.1.2021 & Publikationsprozess\\
+13 & wird noch bekannt gegeben & Vorstellung der Gruppenarbeiten\\
+14 & wird noch bekannt gegeben & Klausurvorbereitung\\
+\bottomrule
+\end{tabular}
+
+\hypertarget{wiederholung-7}{%
+\section{Wiederholung}\label{wiederholung-7}}
+
+\hypertarget{stichprobe}{%
+\section{Stichprobe}\label{stichprobe}}
+
+\hypertarget{repruxe4sentativituxe4t}{%
+\subsection{Repräsentativität}\label{repruxe4sentativituxe4t}}
+
+Überlegungen zur \textbf{Repräsentativität} einer Stichprobe beziehen sich auf die Generalisierbarkeit der Ergebnisse also die externe Validität der Studie.
+
+\hypertarget{methoden-zur-stichprobenziehung}{%
+\subsection{Methoden zur Stichprobenziehung}\label{methoden-zur-stichprobenziehung}}
+
+\hypertarget{stichproben-mit-schichtung-und-ohne-zufallsauswahl}{%
+\subsection{Stichproben mit Schichtung und ohne Zufallsauswahl}\label{stichproben-mit-schichtung-und-ohne-zufallsauswahl}}
+
+\hypertarget{quotenstichproben}{%
+\subsubsection{Quotenstichproben:}\label{quotenstichproben}}
+
+\begin{itemize}
+\tightlist
+\item
+  Repräsentativität wird über vorgeschriebene Anteile bestimmter Charakteristika in Population angestrebt
+\end{itemize}
+
+\begin{center}\includegraphics[width=200pt]{imgs/schichtung_zufall} \end{center}
+
+\begin{itemize}
+\tightlist
+\item
+  dabei geschieht die Auswahl der Probanden über Gelegenheit, aber so, dass Quoten erfüllt werden.
+\end{itemize}
+
+\hypertarget{stichproben-mit-schichtung-und-zufallsauswahl}{%
+\subsection{Stichproben mit Schichtung und Zufallsauswahl}\label{stichproben-mit-schichtung-und-zufallsauswahl}}
+
+\hypertarget{geschichtetete-zufallsstichprobe}{%
+\subsubsection{Geschichtetete Zufallsstichprobe:}\label{geschichtetete-zufallsstichprobe}}
+
+\begin{itemize}
+\tightlist
+\item
+  Repräsentativität wird über zufälliges Ziehen aus relevanten Subgruppen der Population zu erreichen versucht.
+\item
+  Auch hier wird versucht, die relative Zusammensetzung der Population zu erhalten
+\end{itemize}
+
+\begin{center}\includegraphics[width=200pt]{imgs/schichtung_zufall2} \end{center}
+
+\begin{itemize}
+\tightlist
+\item
+  Dabei wird aus den jeweiligen Subgruppen der Population zufällig gezogen
+\end{itemize}
+
+\hypertarget{stichproben-ohne-schichtung-und-mit-zufallsauswahl}{%
+\subsection{Stichproben ohne Schichtung und mit Zufallsauswahl}\label{stichproben-ohne-schichtung-und-mit-zufallsauswahl}}
+
+\hypertarget{zufallsstichprobe}{%
+\subsubsection{Zufallsstichprobe:}\label{zufallsstichprobe}}
+
+\begin{itemize}
+\tightlist
+\item
+  Die Stichprobe wird zufällig ohne Berücksichtigung irgendwelcher Parameter aus der Population gezogen
+\end{itemize}
+
+\begin{center}\includegraphics[width=50pt]{imgs/dice} \end{center}
+
+\hypertarget{stichproben-ohne-schichtung-und-ohne-zufallsauswahl}{%
+\subsection{Stichproben ohne Schichtung und ohne Zufallsauswahl}\label{stichproben-ohne-schichtung-und-ohne-zufallsauswahl}}
+
+\hypertarget{gelegenheitsstichprobe}{%
+\subsubsection{Gelegenheitsstichprobe:}\label{gelegenheitsstichprobe}}
+
+\begin{itemize}
+\tightlist
+\item
+  Die Stichprobe besteht aus den Probanden, die gerade zur Verfügung stehen.
+\end{itemize}
+
+\begin{center}\includegraphics[width=200pt]{imgs/copyright} \end{center}
+
+\hypertarget{uxfcbung-zu-stichproben}{%
+\subsection{Übung zu Stichproben}\label{uxfcbung-zu-stichproben}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Fassen Sie die Ergebnisse zusammen.
+\item
+  Überlegen Sie, auf welche Art und Weise die Stichprobe gezogen wurde.
+\item
+  Wägen Sie potentielle Vor- und Nachteile der Ziehungsmethode gegeneinander ab.
+\item
+  Überlegen Sie, ob die Art der Ziehung Ihre Interpretation der Ergebnisse beeinflusst.
+\end{enumerate}
+
+\hypertarget{material}{%
+\section{Material}\label{material}}
+
+\hypertarget{material-1}{%
+\subsection{Material}\label{material-1}}
+
+\hypertarget{paradigma-stimuli-aufgaben}{%
+\subsubsection{Paradigma: Stimuli, Aufgaben}\label{paradigma-stimuli-aufgaben}}
+
+\begin{itemize}
+\item
+  Fragebögen und Tests
+\item
+  Instruktionen
+\end{itemize}
+
+\hypertarget{geruxe4te}{%
+\subsubsection{Geräte}\label{geruxe4te}}
+
+\begin{itemize}
+\item
+  Computer, Monitor, Reaktionserfassung
+\item
+  Spezielle Messgeräte
+\end{itemize}
+
+\hypertarget{software}{%
+\subsubsection{Software}\label{software}}
+
+\begin{itemize}
+\item
+  Zur Erstellung von Stimuli
+\item
+  Für Web-basierte Experimente
+\item
+  Zur Versuchssteuerung
+\end{itemize}
+
+\hypertarget{ruxe4ume}{%
+\subsubsection{Räume}\label{ruxe4ume}}
+
+\hypertarget{material-und-geruxe4te}{%
+\subsection{Material und Geräte}\label{material-und-geruxe4te}}
+
+\hypertarget{stimuli-und-paradigma}{%
+\subsubsection{Stimuli und Paradigma}\label{stimuli-und-paradigma}}
+
+\begin{center}\includegraphics[width=200pt]{imgs/Ablauf} \end{center}
+
+\hypertarget{material-und-geruxe4te-1}{%
+\subsection{Material und Geräte}\label{material-und-geruxe4te-1}}
+
+\hypertarget{beispiele-fuxfcr-geruxe4te}{%
+\subsubsection{Beispiele für Geräte}\label{beispiele-fuxfcr-geruxe4te}}
+
+\begin{itemize}
+\item
+  EEG
+\item
+  Eye Tracker
+\item
+  TMS
+\item
+  \ldots{}
+\end{itemize}
+
+\hypertarget{instruktionen}{%
+\subsection{Instruktionen}\label{instruktionen}}
+
+\hypertarget{gute-instruktionen}{%
+\subsubsection{Gute Instruktionen}\label{gute-instruktionen}}
+
+\begin{itemize}
+\item
+  kurz, prägnant, leicht zu verstehen, fehlerfrei, eindeutig
+\item
+  einfache Sprache, keine Abkürzungen, keine Fachbegriffe!
+\item
+  Wiederholungen statt Synonyme!
+\item
+  Aufbau
+
+  \begin{itemize}
+  \item
+    Worum geht es?
+  \item
+    Wie lange dauert es?
+  \item
+    Was geschieht?
+  \item
+    Was ist zu tun?
+  \item
+    Beispiel-Durchgang oder sogar Übung
+  \end{itemize}
+\item
+  Fragen klären!
+\end{itemize}
+
+\hypertarget{instruktionen-1}{%
+\subsection{Instruktionen}\label{instruktionen-1}}
+
+Du nimmst an einem Experiment zur „mentalen Rotation`` teil.
+
+Das gesamte Experiment wird eine Weile dauern.
+
+Jeder Durchgang beginnt mit einem foveal zu fokussierenden Fixationspunkt, worauf die Präsentation eines Reizes geschehen wird, den du dann bitte, sofern es dir möglich, beachten sollst. Diese Reize
+sind vielleicht in verschiedenen Winkeln rotiert, also nicht in Standard-Orientierung. Die Reize sind aufrecht orientiert. Außerdem können
+die Zeichen entweder ‚normal' oder ‚nicht-normal' sein.
+Deine Aufgabe besteht darin, i.d.R. eine Taste zu drücken.
+Gib damit an, ob das Zeichen ‚normal' oder gespiegelt ist.
+
+\hypertarget{instruktionen-2}{%
+\subsection{Instruktionen}\label{instruktionen-2}}
+
+Du nimmst an einem Experiment zur „mentalen Rotation`` teil.
+
+Das gesamte Experiment wird ca. 40 Minuten dauern.
+
+Jeder Durchgang beginnt mit einem kleinen Punkt in der Bildschirmmitte. Danach wird dir ein
+einzelner Buchstabe oder eine Ziffer (schwarze Schrift auf weißem Grund) präsentiert. Diese
+Zeichen sind meistens rotiert, also nicht in der üblichen aufrechten Position. Außerdem können
+die Zeichen entweder ‚normal' oder gespiegelt dargestellt sein.
+Deine Aufgabe besteht darin, per Tastendruck zu entscheiden,
+ob das Zeichen ‚normal' oder gespiegelt ist - unabhängig von der Rotation.
+
+Beispiele:
+
+\begin{center}\includegraphics[width=66.6666666666667pt]{imgs/copyright} \end{center}
+
+In diesem Experiment werden folgende Zeichen verwendet: 2 5 7 G J R
+
+Auf dem vor dir liegenden Taster gilt folgende Tastenzuordnung:
+
+\begin{center}\includegraphics[width=66.6666666666667pt]{imgs/copyright} \end{center}
+
+Du sollst deine Entscheidung möglichst schnell und fehlerfrei treffen.
+
+Hast du noch Fragen?
+
+\begin{quote}
+aus Bittrich \& Blankenberger
+\end{quote}
+
+\hypertarget{instruktionen-3}{%
+\subsection{Instruktionen}\label{instruktionen-3}}
+
+Der Inhalt der Instruktionen kann mehr oder weniger vollständig bzw. wahrheitsgemäß über Ziel
+und Ablauf des Experiment informieren. Man unterscheidet:
+
+\textbf{Instruktionen mit vollständiger Information:}
+Der VP werden alle Informationen über das
+Experiment uneingeschränkt mitgeteilt
+
+\textbf{Instruktionen mit unvollständiger Information:}
+Der Vp werden nur Details vorenthalten,
+welche die Hypothesen offenlegen oder das Verhalten der Vp ungewollt beeinflussen
+könnten
+
+\textbf{Instruktionen mit Falschinformation:}
+Der Vp werden explizit falsche Informationen gegeben
+um den wahren Untersuchungsgegenstand zu verschleiern oder als Teil der
+Operationalisierung einer UV. Dies ist ethisch problematisch aber manchmal notwendig und
+erfordert eine anschließende Aufklärung (debriefing).
+
+\hypertarget{probelauf}{%
+\subsection{Probelauf}\label{probelauf}}
+
+\textbf{Was kann denn schon schief gehen?}
+
+\begin{itemize}
+\item
+  Instruktionen werden nicht verstanden
+\item
+  Instruktionen werden falsch verstanden
+\item
+  Aufgabe ist zu leicht (Deckeneffekt, ceiling effect)
+\item
+  Aufgabe ist zu schwer (Bodeneffekt, bottom effect)
+\end{itemize}
+
+\hypertarget{probelauf-1}{%
+\subsection{Probelauf}\label{probelauf-1}}
+
+\textbf{Was kann denn schon schief gehen?}
+
+\begin{itemize}
+\item
+  Messungen sind zu fehleranfällig
+\item
+  Technik oder Software funktioniert nicht (immer)
+\item
+  Versuch dauert zu lang
+\item
+  Versuch ist zu ermüdend oder belastend
+\item
+  Vpn werden nicht genug motiviert
+\end{itemize}
+
+\hypertarget{dokumentation}{%
+\subsection{Dokumentation}\label{dokumentation}}
+
+\begin{itemize}
+\item
+  ordentlich und vollständig geführte schriftliche Dokumentation (in Papierform und/oder digital)
+\item
+  Kontaktdaten der Vpn und Schlüsselliste mit Vp-Namen und Vp-Codes (\(\rightarrow\) Tresor)
+\item
+  Checkliste für allgemeinen Versuchsdurchlauf
+\end{itemize}
+
+\hypertarget{protokollbogen-vp-laufzettel-case-report-form-crf}{%
+\subsection{Protokollbogen, Vp-Laufzettel (Case Report Form, CRF)}\label{protokollbogen-vp-laufzettel-case-report-form-crf}}
+
+\begin{itemize}
+\item
+  VP-Code
+\item
+  Datum, Start- und Endzeit
+\item
+  Versuchsbedingung
+\item
+  ggf. weitere erfragte oder beobachtete Informationen (wenn nicht in separaten Fragebögen)
+\item
+  Raum für Notizen zu besonderen Vorkommnissen
+\end{itemize}
+
+\hypertarget{daten-sichern}{%
+\subsection{Daten sichern}\label{daten-sichern}}
+
+\begin{itemize}
+\item
+  Sinnvolle und eindeutige Benennung von Unterlagen und Dateien
+\item
+  Studienordner (mit Name von Versuch und Vl) in abschließbarem Schrank
+\item
+  Digitale Daten an mehreren (auch räumlich getrennten) Speicherorten
+\item
+  Möglicher Zugriff durch Unbefugte muss verhindert werden!
+\end{itemize}
 
   \bibliography{book.bib}
 
