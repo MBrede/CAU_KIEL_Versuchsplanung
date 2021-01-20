@@ -4,14 +4,13 @@
 %
 \documentclass[
 ]{book}
+\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{amsmath}
 \usepackage{ifxetex,ifluatex}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
-  \usepackage{amssymb}
 \else % if luatex or xetex
   \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
@@ -42,7 +41,7 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{longtable,booktabs}
+\usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -143,7 +142,7 @@
 
 \title{Versuchsplanung}
 \author{Max Brede und Maren Hinck}
-\date{2020-12-13}
+\date{2021-01-20}
 
 \begin{document}
 \maketitle
@@ -427,9 +426,9 @@ Auswertung \href{hier}{https://mbrede.shinyapps.io/VPlanung/}
 \begin{longtable}[]{@{}lll@{}}
 \toprule
 \endhead
-SERWAS & \(\rightarrow\) & WASSER\tabularnewline
-TESSMY & \(\rightarrow\) & SYSTEM\tabularnewline
-HARTOX & \(\rightarrow\) & THORAX\tabularnewline
+SERWAS & \(\rightarrow\) & WASSER \\ \addlinespace
+TESSMY & \(\rightarrow\) & SYSTEM \\ \addlinespace
+HARTOX & \(\rightarrow\) & THORAX \\ \addlinespace
 \bottomrule
 \end{longtable}
 
@@ -460,7 +459,7 @@ HARTOX & \(\rightarrow\) & THORAX\tabularnewline
 \begin{longtable}[]{@{}lll@{}}
 \toprule
 \endhead
-CAHENFI & \(\rightarrow\) & ???\tabularnewline
+CAHENFI & \(\rightarrow\) & ??? \\ \addlinespace
 \bottomrule
 \end{longtable}
 
@@ -4672,6 +4671,434 @@ erfordert eine anschließende Aufklärung (debriefing).
 \item
   Möglicher Zugriff durch Unbefugte muss verhindert werden!
 \end{itemize}
+
+\hypertarget{auswertung-darstellung-und-interpretation}{%
+\chapter{Auswertung, Darstellung und Interpretation}\label{auswertung-darstellung-und-interpretation}}
+
+\hypertarget{organisatorisches-9}{%
+\section{Organisatorisches}\label{organisatorisches-9}}
+
+\hypertarget{semesterplan-10}{%
+\subsection{Semesterplan}\label{semesterplan-10}}
+
+\begin{tabular}[t]{rll}
+\toprule
+Sitzung & Datum & Sitzungstitel\\
+\midrule
+1 & 02.11.2020 & Warum wissenschaftliche Psychologie\\
+2 & 28.11.2020
+29.11.2020 & Hypothesen und der Prozess der Hypothesenprüfung\\
+3 & 28.11.2020
+29.11.2020 & Experimentelles Vorgehen\\
+4 & 28.11.2020
+29.11.2020 & Literaturrecherche\\
+5 & 28.11.2020
+29.11.2020 & Operationalisieren und Messen\\
+\addlinespace
+6 & 12.12.2020
+13.12.2020 & Experimentelle Versuchspläne\\
+7 & 12.12.2020
+13.12.2020 & Störvariablen im Experiment\\
+8 & 12.12.2020
+13.12.2020 & Nicht-experimentelle Versuchspläne\\
+9 & 12.12.2020
+13.12.2020 & Material und Stichprobe\\
+10 & 23.1.2021
+24.1.2021 & Auswertung, Darstellung und Interpretation\\
+\addlinespace
+11 & 23.1.2021
+24.1.2021 & Ethische Probleme im Versuch\\
+12 & 23.1.2021
+24.1.2021 & Publikationsprozess\\
+13 & wird noch bekannt gegeben & Vorstellung der Gruppenarbeiten\\
+14 & wird noch bekannt gegeben & Klausurvorbereitung\\
+\bottomrule
+\end{tabular}
+
+\hypertarget{wiederholung-8}{%
+\section{Wiederholung}\label{wiederholung-8}}
+
+\hypertarget{prinzip-des-hypothesentestens}{%
+\section{Prinzip des Hypothesentestens}\label{prinzip-des-hypothesentestens}}
+
+\hypertarget{empirie}{%
+\subsection{Empirie}\label{empirie}}
+
+Bekanntes Beispiel:
+
+Therapie und Wartegruppe, nach 5 Wochen Treatment oder Warten Messen der Depressivität:
+
+Hat die Intervention funktioniert?
+
+\hypertarget{hat-die-intervention-funktioniert}{%
+\subsection{Hat die Intervention funktioniert?}\label{hat-die-intervention-funktioniert}}
+
+\hypertarget{vorsicht-1}{%
+\subsubsection{Vorsicht!}\label{vorsicht-1}}
+
+Eine einfache Aussage über unsere Stichprobe ist uninteressant.
+
+Externe Validität usw. müssen wir als versuchsplanerisch gegeben annehmen, eigentlich interessant ist die allgemeine Aussage, ob die Intervention zu einer Änderung der Depressivität führt, also, etwas anders formuliert, ob sich die Verteilung der Depressivitätswerte nach der Intervention von der Verteilung der Normal-Population unterscheidet.
+
+Die inhaltliche Hypothese lautet deswegen:
+
+Die depressive Symptomatik verringert sich durch die Intervention.
+
+Gibt es einen Unterschied und wenn ja, wie groß ist dieser?
+Und wie könnte man diesen Unterschied statistisch untersuchen?
+
+\hypertarget{kleiner-exkurs-verteilungen}{%
+\subsection{kleiner Exkurs: Verteilungen}\label{kleiner-exkurs-verteilungen}}
+
+Wir betrachten jetzt die Mittelwerte der Gruppen, nicht die Originalwerte. Unser Experiment sieht dann zum Beispiel so aus:
+
+\begin{center}\includegraphics[width=200pt]{Versuchsplanung_WS20_files/figure-latex/unnamed-chunk-154-1} \end{center}
+
+Da wir in unserer Messung aber auch den uns schon bekannten \emph{Zufallsfehler} haben, wird sich nicht jedes mal exakt dieses Bild ergeben, wenn wir das Experiment zum Beispiel 500 mal durchführen, könnten die Mittelwerte dieser Durchläufe das folgende Bild ergeben:
+
+\begin{center}\includegraphics[width=200pt]{Versuchsplanung_WS20_files/figure-latex/unnamed-chunk-155-1} \end{center}
+
+Ein bisschen anders dargestellt sieht das so aus:
+
+\begin{center}\includegraphics[width=200pt]{Versuchsplanung_WS20_files/figure-latex/unnamed-chunk-156-1} \end{center}
+
+Was praktischerweise ziemlich doll einer Normalverteilung ähnelt:
+
+\begin{center}\includegraphics[width=200pt]{Versuchsplanung_WS20_files/figure-latex/unnamed-chunk-157-1} \end{center}
+
+Wir nutzen diese Ähnlichkeit um die Heuristik zu benutzen, dass wir keinen Unterschied in den Gruppen mehr zu zeigen versuchen, sondern einen Unterschied in den Verteilungen, aus denen die Gruppenwerte gezogen wurden.
+
+\hypertarget{problem}{%
+\subsection{Problem:}\label{problem}}
+
+\hypertarget{wir-wissen-nicht-wie-die-wahre-verteilung-der-werte-aussieht.}{%
+\subsubsection{Wir wissen nicht, wie die wahre Verteilung der Werte aussieht.}\label{wir-wissen-nicht-wie-die-wahre-verteilung-der-werte-aussieht.}}
+
+\begin{center}\includegraphics[width=266.666666666667pt]{Versuchsplanung_WS20_files/figure-latex/unnamed-chunk-159-1} \end{center}
+
+\hypertarget{luxf6sung-statistischer-hypothesentest}{%
+\subsection{Lösung: Statistischer Hypothesentest}\label{luxf6sung-statistischer-hypothesentest}}
+
+Folgende Überlegung:
+
+Wir versuchen nicht, einen Unterschied zu zeigen, sondern versuchen, die Wahrscheinlichkeit sich fälschlicherweise für die Annahme eines Unterschieds zu entscheiden, klein zu halten.
+
+Wir müssen also aus unseren Daten eine Statistik bilden, über die wir Wahrscheinlichkeits-Aussagen für den Fall treffen können, dass kein Unterschied besteht.
+
+Die interessante Frage im Beispiel ist, ob die Wartegruppen-Population einen höheren Erwartungswert (und damit eine ``weiter rechts liegende'' Verteilung) hat als die Interventionsgruppen-Population. Anders ausgedrückt: ist die Differenz der Erwartungswerte größer als 0?
+
+Im Beispiel gelten folgende Voraussetzungen:
+
+\begin{itemize}
+\tightlist
+\item
+  Varianzen sind (der Einfachheit halber) bekannt und gleich
+\item
+  Variablen sind normalverteilt
+\item
+  Stichproben sind unabhängig und gleich groß (N=20)
+\end{itemize}
+
+Mit diesen Voraussetzungen können wir folgenden Bruch aufstellen: \newline 
+
+\begin{center} $z = {M_X - M_Y\over \sqrt{{\sigma_X^2\over n_X} + {\sigma_Y^2\over n_Y}}}$ \end{center}
+
+Dieser ist bei 0-Differenz \(N(0,1)\)-verteilt.
+
+\hypertarget{beispiel-1}{%
+\subsection{Beispiel}\label{beispiel-1}}
+
+\begin{center}\includegraphics[width=200pt]{Versuchsplanung_WS20_files/figure-latex/unnamed-chunk-161-1} \end{center}
+
+Der Wert unserer Teststatistik ist also:
+
+\(z_{emp}={28.1-25.3 \over \sqrt{{ 16 \over 20 } + { 16 \over 20}}} = 2.21\)
+
+\begin{center}\includegraphics[width=200pt]{Versuchsplanung_WS20_files/figure-latex/unnamed-chunk-163-1} \end{center}
+
+Nehmen wir unsere Hypothese, dass die Therapie zu niedrigerer Depressionssymptomatik führt, an?
+
+\hypertarget{prinzip-des-hypothesentestens-1}{%
+\subsection{Prinzip des Hypothesentestens}\label{prinzip-des-hypothesentestens-1}}
+
+Da wir uns guten Gewissens gegen die \(H_0\) entscheiden wollen, legen wir eine Obergrenze für den Fehler 1. Art fest:
+
+ 
+  \providecommand{\huxb}[2]{\arrayrulecolor[RGB]{#1}\global\arrayrulewidth=#2pt}
+  \providecommand{\huxvb}[2]{\color[RGB]{#1}\vrule width #2pt}
+  \providecommand{\huxtpad}[1]{\rule{0pt}{#1}}
+  \providecommand{\huxbpad}[1]{\rule[-#1]{0pt}{#1}}
+
+\begin{table}[ht]
+\begin{centerbox}
+\begin{threeparttable}
+\captionsetup{justification=centering,singlelinecheck=off}
+\caption{\label{tab:unnamed-chunk-164} }
+ \setlength{\tabcolsep}{0pt}
+\begin{tabular}{l l l l}
+
+
+\hhline{}
+\arrayrulecolor{black}
+
+\multicolumn{2}{!{\huxvb{0, 0, 0}{0}}c!{\huxvb{0, 0, 0}{0}}}{} &
+\multicolumn{2}{c!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\centering \hspace{6pt} Entscheidung für \hspace{6pt}\huxbpad{6pt}} \tabularnewline[-0.5pt]
+
+
+\hhline{}
+\arrayrulecolor{black}
+
+\multicolumn{2}{!{\huxvb{0, 0, 0}{0}}c!{\huxvb{0, 0, 0}{0.4}}}{\multirow[c]{-2}{*}[0ex]{\huxtpad{6pt + 1em}\centering \hspace{6pt}  \hspace{6pt}\huxbpad{6pt}}} &
+\multicolumn{1}{c!{\huxvb{0, 0, 0}{0.4}}}{\huxtpad{6pt + 1em}\centering \hspace{6pt} Nullhypothese \hspace{6pt}\huxbpad{6pt}} &
+\multicolumn{1}{c!{\huxvb{0, 0, 0}{0.4}}}{\huxtpad{6pt + 1em}\centering \hspace{6pt} Alternativhypothese \hspace{6pt}\huxbpad{6pt}} \tabularnewline[-0.5pt]
+
+
+\hhline{>{\huxb{255, 255, 255}{0.4}}->{\huxb{0, 0, 0}{0.4}}->{\huxb{0, 0, 0}{0.4}}->{\huxb{0, 0, 0}{0.4}}-}
+\arrayrulecolor{black}
+
+\multicolumn{1}{!{\huxvb{0, 0, 0}{0}}l!{\huxvb{0, 0, 0}{0}}}{} &
+\multicolumn{1}{l!{\huxvb{0, 0, 0}{0.4}}}{\huxtpad{6pt + 1em}\raggedright \hspace{6pt} Nullhypothese \hspace{6pt}\huxbpad{6pt}} &
+\multicolumn{1}{l!{\huxvb{0, 0, 0}{0.4}}}{\huxtpad{6pt + 1em}\raggedright \hspace{6pt}  \hspace{6pt}\huxbpad{6pt}} &
+\multicolumn{1}{l!{\huxvb{0, 0, 0}{0.4}}}{\huxtpad{6pt + 1em}\raggedright \hspace{6pt} Fehler 2. Art \hspace{6pt}\huxbpad{6pt}} \tabularnewline[-0.5pt]
+
+
+\hhline{>{\huxb{255, 255, 255}{0.4}}->{\huxb{0, 0, 0}{0.4}}->{\huxb{0, 0, 0}{0.4}}->{\huxb{0, 0, 0}{0.4}}-}
+\arrayrulecolor{black}
+
+\multicolumn{1}{!{\huxvb{0, 0, 0}{0}}l!{\huxvb{0, 0, 0}{0}}}{\multirow[c]{-2}{*}[0ex]{\huxtpad{6pt + 1em}\raggedright \hspace{6pt} Tatsächlich gilt \hspace{6pt}\huxbpad{6pt}}} &
+\multicolumn{1}{l!{\huxvb{0, 0, 0}{0.4}}}{\huxtpad{6pt + 1em}\raggedright \hspace{6pt} Alternativhypothese \hspace{6pt}\huxbpad{6pt}} &
+\multicolumn{1}{l!{\huxvb{0, 0, 0}{0.4}}}{\huxtpad{6pt + 1em}\raggedright \hspace{6pt} Fehler 1. Art \hspace{6pt}\huxbpad{6pt}} &
+\multicolumn{1}{l!{\huxvb{0, 0, 0}{0.4}}}{\huxtpad{6pt + 1em}\raggedright \hspace{6pt}  \hspace{6pt}\huxbpad{6pt}} \tabularnewline[-0.5pt]
+
+
+\hhline{>{\huxb{255, 255, 255}{0.4}}->{\huxb{0, 0, 0}{0.4}}->{\huxb{0, 0, 0}{0.4}}->{\huxb{0, 0, 0}{0.4}}-}
+\arrayrulecolor{black}
+\end{tabular}
+\end{threeparttable}\par\end{centerbox}
+
+\end{table}
+ 
+
+\begin{center}\includegraphics[width=200pt]{Versuchsplanung_WS20_files/figure-latex/unnamed-chunk-165-1} \end{center}
+
+In der Tabelle ist aber noch ein Fehler 2. Art / \(\beta\)-Fehler aufgeführt.
+
+ 
+  \providecommand{\huxb}[2]{\arrayrulecolor[RGB]{#1}\global\arrayrulewidth=#2pt}
+  \providecommand{\huxvb}[2]{\color[RGB]{#1}\vrule width #2pt}
+  \providecommand{\huxtpad}[1]{\rule{0pt}{#1}}
+  \providecommand{\huxbpad}[1]{\rule[-#1]{0pt}{#1}}
+
+\begin{table}[ht]
+\begin{centerbox}
+\begin{threeparttable}
+\captionsetup{justification=centering,singlelinecheck=off}
+\caption{\label{tab:unnamed-chunk-166} }
+ \setlength{\tabcolsep}{0pt}
+\begin{tabular}{l l l l}
+
+
+\hhline{}
+\arrayrulecolor{black}
+
+\multicolumn{2}{!{\huxvb{0, 0, 0}{0}}c!{\huxvb{0, 0, 0}{0}}}{} &
+\multicolumn{2}{c!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\centering \hspace{6pt} Entscheidung für \hspace{6pt}\huxbpad{6pt}} \tabularnewline[-0.5pt]
+
+
+\hhline{}
+\arrayrulecolor{black}
+
+\multicolumn{2}{!{\huxvb{0, 0, 0}{0}}c!{\huxvb{0, 0, 0}{0.4}}}{\multirow[c]{-2}{*}[0ex]{\huxtpad{6pt + 1em}\centering \hspace{6pt}  \hspace{6pt}\huxbpad{6pt}}} &
+\multicolumn{1}{c!{\huxvb{0, 0, 0}{0.4}}}{\huxtpad{6pt + 1em}\centering \hspace{6pt} Nullhypothese \hspace{6pt}\huxbpad{6pt}} &
+\multicolumn{1}{c!{\huxvb{0, 0, 0}{0.4}}}{\huxtpad{6pt + 1em}\centering \hspace{6pt} Alternativhypothese \hspace{6pt}\huxbpad{6pt}} \tabularnewline[-0.5pt]
+
+
+\hhline{>{\huxb{255, 255, 255}{0.4}}->{\huxb{0, 0, 0}{0.4}}->{\huxb{0, 0, 0}{0.4}}->{\huxb{0, 0, 0}{0.4}}-}
+\arrayrulecolor{black}
+
+\multicolumn{1}{!{\huxvb{0, 0, 0}{0}}l!{\huxvb{0, 0, 0}{0}}}{} &
+\multicolumn{1}{l!{\huxvb{0, 0, 0}{0.4}}}{\huxtpad{6pt + 1em}\raggedright \hspace{6pt} Nullhypothese \hspace{6pt}\huxbpad{6pt}} &
+\multicolumn{1}{l!{\huxvb{0, 0, 0}{0.4}}}{\huxtpad{6pt + 1em}\raggedright \hspace{6pt}  \hspace{6pt}\huxbpad{6pt}} &
+\multicolumn{1}{l!{\huxvb{0, 0, 0}{0.4}}}{\huxtpad{6pt + 1em}\raggedright \hspace{6pt} Fehler 2. Art \hspace{6pt}\huxbpad{6pt}} \tabularnewline[-0.5pt]
+
+
+\hhline{>{\huxb{255, 255, 255}{0.4}}->{\huxb{0, 0, 0}{0.4}}->{\huxb{0, 0, 0}{0.4}}->{\huxb{0, 0, 0}{0.4}}-}
+\arrayrulecolor{black}
+
+\multicolumn{1}{!{\huxvb{0, 0, 0}{0}}l!{\huxvb{0, 0, 0}{0}}}{\multirow[c]{-2}{*}[0ex]{\huxtpad{6pt + 1em}\raggedright \hspace{6pt} Tatsächlich gilt \hspace{6pt}\huxbpad{6pt}}} &
+\multicolumn{1}{l!{\huxvb{0, 0, 0}{0.4}}}{\huxtpad{6pt + 1em}\raggedright \hspace{6pt} Alternativhypothese \hspace{6pt}\huxbpad{6pt}} &
+\multicolumn{1}{l!{\huxvb{0, 0, 0}{0.4}}}{\huxtpad{6pt + 1em}\raggedright \hspace{6pt} Fehler 1. Art \hspace{6pt}\huxbpad{6pt}} &
+\multicolumn{1}{l!{\huxvb{0, 0, 0}{0.4}}}{\huxtpad{6pt + 1em}\raggedright \hspace{6pt}  \hspace{6pt}\huxbpad{6pt}} \tabularnewline[-0.5pt]
+
+
+\hhline{>{\huxb{255, 255, 255}{0.4}}->{\huxb{0, 0, 0}{0.4}}->{\huxb{0, 0, 0}{0.4}}->{\huxb{0, 0, 0}{0.4}}-}
+\arrayrulecolor{black}
+\end{tabular}
+\end{threeparttable}\par\end{centerbox}
+
+\end{table}
+ 
+
+Können wir zu diesem Aussagen treffen?
+
+App gibt's \href{https://mbrede.shinyapps.io/VPlanung/}{hier}
+
+\textbf{Möglichkeiten, um \(\beta\) zu verkleinern und die Power zu vergrößern}
+
+\begin{itemize}
+\tightlist
+\item
+  N vergrößern \(\rightarrow\) Verteilungen werden schmaler
+\item
+  Effektgröße erhöhen \(\rightarrow\) Verteilungen rutschen auseinander
+\item
+  größeres \(\alpha\) wählen \(\rightarrow \beta\) wird automatisch kleiner
+\end{itemize}
+
+Wie sehen statistische Hypothesen aus?
+
+\hypertarget{statistische-hypothesen}{%
+\section{Statistische Hypothesen}\label{statistische-hypothesen}}
+
+\hypertarget{wie-sehen-statistische-hypothesen-aus}{%
+\subsection{Wie sehen statistische Hypothesen aus?}\label{wie-sehen-statistische-hypothesen-aus}}
+
+Das kommt auf den Versuchsplan, die Fragestellung und das gewählte statistische Verfahren an. \smallskip \newline Ein paar Beispiele:
+
+\begin{center}\includegraphics[width=266.666666666667pt]{imgs/stats} \end{center}
+
+\hypertarget{t-test}{%
+\subsection{t-Test}\label{t-test}}
+
+\hypertarget{typisches-hypothesenpaar}{%
+\subsubsection{Typisches Hypothesenpaar:}\label{typisches-hypothesenpaar}}
+
+\[\text{H}_0: \mu_{\text{1}} \leq \mu_{\text{2}}\]
+\[\text{H}_1:\mu_{\text{1}} > \mu_{\text{2}}\]
+
+\hypertarget{typische-darstellungen}{%
+\subsubsection{Typische Darstellungen:}\label{typische-darstellungen}}
+
+\begin{center}\includegraphics[width=266.666666666667pt]{imgs/t} \end{center}
+
+\hypertarget{einfaktorielle-varianzanalyse}{%
+\subsection{einfaktorielle Varianzanalyse}\label{einfaktorielle-varianzanalyse}}
+
+\hypertarget{typisches-hypothesenpaar-1}{%
+\subsubsection{Typisches Hypothesenpaar:}\label{typisches-hypothesenpaar-1}}
+
+\[\text{H}_0: \mu_{\text{1}} = \mu_{\text{2}} = \mu_{\text{3}}\]
+\[\text{H}_1:\text{nicht } \text{H}_0\]
+
+\hypertarget{typische-darstellungen-1}{%
+\subsubsection{Typische Darstellungen:}\label{typische-darstellungen-1}}
+
+\begin{center}\includegraphics[width=266.666666666667pt]{imgs/efVA} \end{center}
+
+\hypertarget{mehrfaktorielle-varianzanalyse}{%
+\subsection{mehrfaktorielle Varianzanalyse}\label{mehrfaktorielle-varianzanalyse}}
+
+Wird mit jedem zusätzlichen Faktor komplizierter, deswegen hier nur der 2-faktorielle Fall.
+
+\hypertarget{typische-nullhypothesen}{%
+\subsubsection{Typische Nullhypothesen:}\label{typische-nullhypothesen}}
+
+\[\text{H}_{0A}:  \mu_{1\cdot}  =  \mu_{2\cdot}  =  \cdots   =  \mu_{j\cdot}\]
+\[\text{H}_{0B}:  \mu_{\cdot 1}  =  \mu_{\cdot 2}  =  \cdots   =  \mu_{\cdot k}\]
+\[\text{H}_{0I}:  \forall {\mu}_{jk} \text{ gilt}: {\mu}_{jk}  =  {\mu}_{j\cdot} + {\mu}_{\cdot k} - \mu\]
+
+\hypertarget{typische-darstellungen-2}{%
+\subsubsection{Typische Darstellungen:}\label{typische-darstellungen-2}}
+
+\begin{center}\includegraphics[width=266.666666666667pt]{imgs/mfVA} \end{center}
+
+\hypertarget{korrelationen-einfache-regression}{%
+\subsection{Korrelationen / einfache Regression}\label{korrelationen-einfache-regression}}
+
+\hypertarget{typisches-hypothesenpaar-2}{%
+\subsubsection{Typisches Hypothesenpaar}\label{typisches-hypothesenpaar-2}}
+
+\[\text{H}_0: \rho_{X,Y}  \leq  0\]
+\[\text{H}_1: \rho_{X,Y}  >  0\]
+
+\hypertarget{typische-darstellungen-3}{%
+\subsubsection{Typische Darstellungen:}\label{typische-darstellungen-3}}
+
+\begin{center}\includegraphics[width=266.666666666667pt]{imgs/sc} \end{center}
+
+\hypertarget{ergebnisdarstellung}{%
+\subsection{Ergebnisdarstellung}\label{ergebnisdarstellung}}
+
+\begin{center}\includegraphics[width=266.666666666667pt]{imgs/copyright} \end{center}
+
+\hypertarget{ergebnisdarstellung-1}{%
+\subsection{Ergebnisdarstellung}\label{ergebnisdarstellung-1}}
+
+\begin{center}\includegraphics[width=266.666666666667pt]{imgs/copyright} \end{center}
+
+\hypertarget{uxfcbung-2}{%
+\subsection{Übung}\label{uxfcbung-2}}
+
+Übung
+
+Wird man in Klausuren besser, wenn man vorher LSD nimmt?
+\[\text{H}_0: \mu_{\text{LSD}}  \leq  \mu_{\text{Placebo}}\]
+\[\text{H}_1: \mu_{\text{LSD}}  >  \mu_{\text{Placebo}}\]
+
+Gibt es einen Zusammenhang zwischen der Exzentrik von Frisuren und dem Ausmaß der Psychopathie nach Hare?
+\[ \text{H}_0: \rho_{Frise,PP}  \leq  0 \]
+\[\text{H}_1: \rho_{Frise,PP}  >  0\]
+
+\begin{cols}
+
+\begin{col}{0.50\textwidth}
+
+\begin{center}\includegraphics[width=150pt]{imgs/copyright} \end{center}
+
+\end{col}
+
+\begin{col}{0.5\textwidth}
+
+\begin{center}\includegraphics[width=150pt]{imgs/copyright} \end{center}
+
+\end{col}
+
+\end{cols}
+
+Verbessert sich bei Kindern mit ADHS unter Gabe von Methylphenidat (vs.~Placebo) die Blau-Gelb-Diskrimination, aber nicht die Rot-Grün-Diskrimination?
+
+\begin{cols}
+
+\begin{col}{0.30\textwidth}
+
+\begin{center}\includegraphics[width=150pt]{imgs/copyright} \end{center}
+
+\end{col}
+
+\begin{col}{0.68\textwidth}
+
+\end{col}
+
+\end{cols}
+
+\[\text{H}_0: \mu_{\text{BG, MPH}} -\mu_{\text{BG, Placebo}} \leq \mu_{\text{RG, MPH}} -\mu_{\text{RG,Placebo}}\]
+\[\text{H}_1: \mu_{\text{BG, MPH}} -\mu_{\text{BG, Placebo}}  > \mu_{\text{RG, MPH}} -\mu_{\text{RG, Placebo}}\]
+
+Stimmt es, dass sich die Unfallhäufigkeit von
+roten und silbernen Autos nicht unterscheidet?
+
+\begin{tabular}[t]{lrr}
+\toprule
+Farbe & kein Unfall & Unfall\\
+\midrule
+rot & 10000 & 300\\
+silber & 70000 & 210\\
+\bottomrule
+\end{tabular}
+
+\[\text{H}_0: \rho_{Autofarbe,Unfallrate}  \leq  0\]
+
+Test auf Nullhypothese ist nicht in der gleichen Form möglich, da wir den Fall der Nullhypothese brauchen um eine Vertielung zu haben über die wir Wahrscheinlichkeitsaussagen treffen können.
 
   \bibliography{book.bib}
 

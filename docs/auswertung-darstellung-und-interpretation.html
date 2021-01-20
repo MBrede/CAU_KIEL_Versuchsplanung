@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Auswertung, Darstellung und Interpretation | Versuchsplanung</title>
+  <meta name="description" content="Seminar zu Versuchsplanung im Wintersemester 2020" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Auswertung, Darstellung und Interpretation | Versuchsplanung" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Seminar zu Versuchsplanung im Wintersemester 2020" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Auswertung, Darstellung und Interpretation | Versuchsplanung" />
+  
+  <meta name="twitter:description" content="Seminar zu Versuchsplanung im Wintersemester 2020" />
+  
+
+<meta name="author" content="Max Brede und Maren Hinck" />
+
+
+<meta name="date" content="2021-01-20" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="material-und-stichprobe.html"/>
+<link rel="next" href="literatur-2.html"/>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.5.2/htmlwidgets.js"></script>
+<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="libs/datatables-binding-0.16/datatables.js"></script>
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+<link href="libs/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+<script src="libs/plotly-binding-4.9.2.1/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Versuchsplanung <br> WiSe 20</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Vorwort</a></li>
+<li class="chapter" data-level="" data-path="lehrplan.html"><a href="lehrplan.html"><i class="fa fa-check"></i>Lehrplan</a>
+<ul>
+<li class="chapter" data-level="" data-path="lehrplan.html"><a href="lehrplan.html#semesterplan"><i class="fa fa-check"></i>Semesterplan</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="warum-wissenschaftliche-psychologie.html"><a href="warum-wissenschaftliche-psychologie.html"><i class="fa fa-check"></i>Warum wissenschaftliche Psychologie?</a>
+<ul>
+<li class="chapter" data-level="" data-path="warum-wissenschaftliche-psychologie.html"><a href="warum-wissenschaftliche-psychologie.html#organisatorisches"><i class="fa fa-check"></i>Organisatorisches</a></li>
+<li class="chapter" data-level="" data-path="warum-wissenschaftliche-psychologie.html"><a href="warum-wissenschaftliche-psychologie.html#alltagspsychologie-und-ihre-fehler"><i class="fa fa-check"></i>Alltagspsychologie und ihre Fehler</a></li>
+<li class="chapter" data-level="" data-path="warum-wissenschaftliche-psychologie.html"><a href="warum-wissenschaftliche-psychologie.html#wissenschaftliche-psychologie"><i class="fa fa-check"></i>Wissenschaftliche Psychologie</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="hypothesen.html"><a href="hypothesen.html"><i class="fa fa-check"></i>Hypothesen</a>
+<ul>
+<li class="chapter" data-level="" data-path="hypothesen.html"><a href="hypothesen.html#organisatorisches-1"><i class="fa fa-check"></i>Organisatorisches</a></li>
+<li class="chapter" data-level="" data-path="hypothesen.html"><a href="hypothesen.html#wiederholung"><i class="fa fa-check"></i>Wiederholung</a></li>
+<li class="chapter" data-level="" data-path="hypothesen.html"><a href="hypothesen.html#hypothesen-1"><i class="fa fa-check"></i>Hypothesen</a></li>
+<li class="chapter" data-level="" data-path="hypothesen.html"><a href="hypothesen.html#ausblick"><i class="fa fa-check"></i>Ausblick</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="experimentelles-vorgehen-und-kausalschlüsse.html"><a href="experimentelles-vorgehen-und-kausalschlüsse.html"><i class="fa fa-check"></i>Experimentelles Vorgehen und Kausalschlüsse</a>
+<ul>
+<li class="chapter" data-level="" data-path="experimentelles-vorgehen-und-kausalschlüsse.html"><a href="experimentelles-vorgehen-und-kausalschlüsse.html#organisatorisches-2"><i class="fa fa-check"></i>Organisatorisches</a></li>
+<li class="chapter" data-level="" data-path="experimentelles-vorgehen-und-kausalschlüsse.html"><a href="experimentelles-vorgehen-und-kausalschlüsse.html#wiederholung-1"><i class="fa fa-check"></i>Wiederholung</a></li>
+<li class="chapter" data-level="" data-path="experimentelles-vorgehen-und-kausalschlüsse.html"><a href="experimentelles-vorgehen-und-kausalschlüsse.html#grundidee-des-experimentierens"><i class="fa fa-check"></i>Grundidee des Experimentierens</a></li>
+<li class="chapter" data-level="" data-path="experimentelles-vorgehen-und-kausalschlüsse.html"><a href="experimentelles-vorgehen-und-kausalschlüsse.html#typen-von-studien-experimenten"><i class="fa fa-check"></i>Typen von Studien / Experimenten</a></li>
+<li class="chapter" data-level="" data-path="experimentelles-vorgehen-und-kausalschlüsse.html"><a href="experimentelles-vorgehen-und-kausalschlüsse.html#fallbeispiele"><i class="fa fa-check"></i>Fallbeispiele</a></li>
+<li class="chapter" data-level="" data-path="experimentelles-vorgehen-und-kausalschlüsse.html"><a href="experimentelles-vorgehen-und-kausalschlüsse.html#ausblick-1"><i class="fa fa-check"></i>Ausblick</a></li>
+<li class="chapter" data-level="" data-path="experimentelles-vorgehen-und-kausalschlüsse.html"><a href="experimentelles-vorgehen-und-kausalschlüsse.html#anhang"><i class="fa fa-check"></i>Anhang</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="literaturrecherche.html"><a href="literaturrecherche.html"><i class="fa fa-check"></i>Literaturrecherche</a>
+<ul>
+<li class="chapter" data-level="" data-path="literaturrecherche.html"><a href="literaturrecherche.html#organisatorisches-3"><i class="fa fa-check"></i>Organisatorisches</a></li>
+<li class="chapter" data-level="" data-path="literaturrecherche.html"><a href="literaturrecherche.html#wiederholung-2"><i class="fa fa-check"></i>Wiederholung</a></li>
+<li class="chapter" data-level="" data-path="literaturrecherche.html"><a href="literaturrecherche.html#literaturrecherche-1"><i class="fa fa-check"></i>Literaturrecherche</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="operationalisieren-und-messen.html"><a href="operationalisieren-und-messen.html"><i class="fa fa-check"></i>Operationalisieren und Messen</a>
+<ul>
+<li class="chapter" data-level="" data-path="operationalisieren-und-messen.html"><a href="operationalisieren-und-messen.html#organisatorisches-4"><i class="fa fa-check"></i>Organisatorisches</a></li>
+<li class="chapter" data-level="" data-path="operationalisieren-und-messen.html"><a href="operationalisieren-und-messen.html#wiederholung-3"><i class="fa fa-check"></i>Wiederholung</a></li>
+<li class="chapter" data-level="" data-path="operationalisieren-und-messen.html"><a href="operationalisieren-und-messen.html#operationalisierung"><i class="fa fa-check"></i>Operationalisierung</a></li>
+<li class="chapter" data-level="" data-path="operationalisieren-und-messen.html"><a href="operationalisieren-und-messen.html#güte-von-operationalisierungen"><i class="fa fa-check"></i>Güte von Operationalisierungen</a></li>
+<li class="chapter" data-level="" data-path="operationalisieren-und-messen.html"><a href="operationalisieren-und-messen.html#operationalisierungsmethoden"><i class="fa fa-check"></i>Operationalisierungsmethoden</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="experimentelle-versuchspläne.html"><a href="experimentelle-versuchspläne.html"><i class="fa fa-check"></i>Experimentelle Versuchspläne</a>
+<ul>
+<li class="chapter" data-level="" data-path="experimentelle-versuchspläne.html"><a href="experimentelle-versuchspläne.html#organisatorisches-5"><i class="fa fa-check"></i>Organisatorisches</a></li>
+<li class="chapter" data-level="" data-path="experimentelle-versuchspläne.html"><a href="experimentelle-versuchspläne.html#wiederholung-4"><i class="fa fa-check"></i>Wiederholung</a></li>
+<li class="chapter" data-level="" data-path="experimentelle-versuchspläne.html"><a href="experimentelle-versuchspläne.html#versuchspläne"><i class="fa fa-check"></i>Versuchspläne</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="störvariablen.html"><a href="störvariablen.html"><i class="fa fa-check"></i>Störvariablen</a>
+<ul>
+<li class="chapter" data-level="" data-path="störvariablen.html"><a href="störvariablen.html#organisatorisches-6"><i class="fa fa-check"></i>Organisatorisches</a></li>
+<li class="chapter" data-level="" data-path="störvariablen.html"><a href="störvariablen.html#wiederholung-5"><i class="fa fa-check"></i>Wiederholung</a></li>
+<li class="chapter" data-level="" data-path="störvariablen.html"><a href="störvariablen.html#varianz---freund-und-feind"><i class="fa fa-check"></i>Varianz - Freund und Feind</a></li>
+<li class="chapter" data-level="" data-path="störvariablen.html"><a href="störvariablen.html#störvariablen-1"><i class="fa fa-check"></i>Störvariablen</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="nicht-experimentelle-versuchspläne.html"><a href="nicht-experimentelle-versuchspläne.html"><i class="fa fa-check"></i>nicht-experimentelle Versuchspläne</a>
+<ul>
+<li class="chapter" data-level="" data-path="nicht-experimentelle-versuchspläne.html"><a href="nicht-experimentelle-versuchspläne.html#organisatorisches-7"><i class="fa fa-check"></i>Organisatorisches</a></li>
+<li class="chapter" data-level="" data-path="nicht-experimentelle-versuchspläne.html"><a href="nicht-experimentelle-versuchspläne.html#wiederholung-6"><i class="fa fa-check"></i>Wiederholung</a></li>
+<li class="chapter" data-level="" data-path="nicht-experimentelle-versuchspläne.html"><a href="nicht-experimentelle-versuchspläne.html#quasiexperimentelle-designs"><i class="fa fa-check"></i>Quasiexperimentelle Designs</a></li>
+<li class="chapter" data-level="" data-path="nicht-experimentelle-versuchspläne.html"><a href="nicht-experimentelle-versuchspläne.html#ex-post-facto-studien"><i class="fa fa-check"></i>Ex-post-Facto-Studien</a></li>
+<li class="chapter" data-level="" data-path="nicht-experimentelle-versuchspläne.html"><a href="nicht-experimentelle-versuchspläne.html#nicht-experimentelle-untersuchungen"><i class="fa fa-check"></i>Nicht-experimentelle Untersuchungen</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="material-und-stichprobe.html"><a href="material-und-stichprobe.html"><i class="fa fa-check"></i>Material und Stichprobe</a>
+<ul>
+<li class="chapter" data-level="" data-path="material-und-stichprobe.html"><a href="material-und-stichprobe.html#organisatorisches-8"><i class="fa fa-check"></i>Organisatorisches</a></li>
+<li class="chapter" data-level="" data-path="material-und-stichprobe.html"><a href="material-und-stichprobe.html#wiederholung-7"><i class="fa fa-check"></i>Wiederholung</a></li>
+<li class="chapter" data-level="" data-path="material-und-stichprobe.html"><a href="material-und-stichprobe.html#stichprobe"><i class="fa fa-check"></i>Stichprobe</a></li>
+<li class="chapter" data-level="" data-path="material-und-stichprobe.html"><a href="material-und-stichprobe.html#material"><i class="fa fa-check"></i>Material</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="auswertung-darstellung-und-interpretation.html"><a href="auswertung-darstellung-und-interpretation.html"><i class="fa fa-check"></i>Auswertung, Darstellung und Interpretation</a>
+<ul>
+<li class="chapter" data-level="" data-path="auswertung-darstellung-und-interpretation.html"><a href="auswertung-darstellung-und-interpretation.html#organisatorisches-9"><i class="fa fa-check"></i>Organisatorisches</a></li>
+<li class="chapter" data-level="" data-path="auswertung-darstellung-und-interpretation.html"><a href="auswertung-darstellung-und-interpretation.html#wiederholung-8"><i class="fa fa-check"></i>Wiederholung</a></li>
+<li class="chapter" data-level="" data-path="auswertung-darstellung-und-interpretation.html"><a href="auswertung-darstellung-und-interpretation.html#prinzip-des-hypothesentestens"><i class="fa fa-check"></i>Prinzip des Hypothesentestens</a></li>
+<li class="chapter" data-level="" data-path="auswertung-darstellung-und-interpretation.html"><a href="auswertung-darstellung-und-interpretation.html#statistische-hypothesen"><i class="fa fa-check"></i>Statistische Hypothesen</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="literatur-2.html"><a href="literatur-2.html"><i class="fa fa-check"></i>Literatur</a></li>
+<li class="divider"></li>
+<li><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Versuchsplanung</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="auswertung-darstellung-und-interpretation" class="section level1">
+<h1>Auswertung, Darstellung und Interpretation</h1>
+<div id="organisatorisches-9" class="section level2">
+<h2>Organisatorisches</h2>
+<div id="semesterplan-10" class="section level3">
+<h3>Semesterplan</h3>
+<table class=" lightable-classic" style="font-size: 15px; font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+Sitzung
+</th>
+<th style="text-align:left;">
+Datum
+</th>
+<th style="text-align:left;">
+Sitzungstitel
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+02.11.2020
+</td>
+<td style="text-align:left;">
+Warum wissenschaftliche Psychologie
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+28.11.2020
+29.11.2020
+</td>
+<td style="text-align:left;">
+Hypothesen und der Prozess der Hypothesenprüfung
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+28.11.2020
+29.11.2020
+</td>
+<td style="text-align:left;">
+Experimentelles Vorgehen
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+28.11.2020
+29.11.2020
+</td>
+<td style="text-align:left;">
+Literaturrecherche
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+28.11.2020
+29.11.2020
+</td>
+<td style="text-align:left;">
+Operationalisieren und Messen
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:left;">
+12.12.2020
+13.12.2020
+</td>
+<td style="text-align:left;">
+Experimentelle Versuchspläne
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:left;">
+12.12.2020
+13.12.2020
+</td>
+<td style="text-align:left;">
+Störvariablen im Experiment
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:left;">
+12.12.2020
+13.12.2020
+</td>
+<td style="text-align:left;">
+Nicht-experimentelle Versuchspläne
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+9
+</td>
+<td style="text-align:left;">
+12.12.2020
+13.12.2020
+</td>
+<td style="text-align:left;">
+Material und Stichprobe
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:left;">
+23.1.2021
+24.1.2021
+</td>
+<td style="text-align:left;">
+Auswertung, Darstellung und Interpretation
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:left;">
+23.1.2021
+24.1.2021
+</td>
+<td style="text-align:left;">
+Ethische Probleme im Versuch
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:left;">
+23.1.2021
+24.1.2021
+</td>
+<td style="text-align:left;">
+Publikationsprozess
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+13
+</td>
+<td style="text-align:left;">
+wird noch bekannt gegeben
+</td>
+<td style="text-align:left;">
+Vorstellung der Gruppenarbeiten
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+14
+</td>
+<td style="text-align:left;">
+wird noch bekannt gegeben
+</td>
+<td style="text-align:left;">
+Klausurvorbereitung
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="wiederholung-8" class="section level2">
+<h2>Wiederholung</h2>
+</div>
+<div id="prinzip-des-hypothesentestens" class="section level2">
+<h2>Prinzip des Hypothesentestens</h2>
+<div id="empirie" class="section level3">
+<h3>Empirie</h3>
+<p>Bekanntes Beispiel:</p>
+<p>Therapie und Wartegruppe, nach 5 Wochen Treatment oder Warten Messen der Depressivität:
+<div id="htmlwidget-c28eecd9d9d9fe5ea336" style="width:600px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c28eecd9d9d9fe5ea336">{"x":{"visdat":{"17137101ad91":["function () ","plotlyVisDat"]},"cur_data":"17137101ad91","attrs":{"17137101ad91":{"x":{},"y":{},"mode":"markers","showlegend":false,"frame":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"range":[-1,2],"title":"","type":"category","categoryorder":"array","categoryarray":["Therapiegruppe","Wartegruppe"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"outcome","range":[10.8831602079054,34.1752386976874]},"hovermode":"closest","showlegend":false,"sliders":[{"currentvalue":{"prefix":"event: ","xanchor":"right","font":{"size":16,"color":"rgba(204,204,204,1)"}},"steps":[{"method":"animate","args":[["1"],{"transition":{"duration":500,"easing":"linear"},"frame":{"duration":500,"redraw":false},"mode":"immediate"}],"label":"1","value":"1"},{"method":"animate","args":[["2"],{"transition":{"duration":500,"easing":"linear"},"frame":{"duration":500,"redraw":false},"mode":"immediate"}],"label":"2","value":"2"},{"method":"animate","args":[["3"],{"transition":{"duration":500,"easing":"linear"},"frame":{"duration":500,"redraw":false},"mode":"immediate"}],"label":"3","value":"3"}],"visible":true,"pad":{"t":40}}],"updatemenus":[{"type":"buttons","direction":"right","showactive":false,"y":0,"x":0,"yanchor":"top","xanchor":"right","pad":{"t":60,"r":5},"buttons":[{"label":"Play","method":"animate","args":[null,{"fromcurrent":true,"mode":"immediate","transition":{"duration":500,"easing":"linear"},"frame":{"duration":500,"redraw":false}}]}],"hide":true}]},"source":"A","config":{"showSendToCloud":false},"data":[{"x":["Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe"],"y":[29.830827857258,31.680800251195,29.073034455624,28.8983299910392,31.4720808642106,29.7842371969864,29.6594217003565,27.8233365762609,23.977896648464,28.8136513343975,28.4804124073959,30.5840997273214,30.8427971891582,27.4110218379982,30.1385701777269,28.3739230454559,33.0217061447157,29.4567822400802,33.1165078572427,29.5253002597909,27.5662457645059,24.9810207283561,24.1998344366815,25.0439712476424,28.4855347623956,22.7856516813879,22.8790210350204,28.9023226387152,26.2054134852142,20.9587810383292,28.0133510857511,26.9274221783392,21.8922171755781,23.4527152425526,27.5215559110515,25.8569115577621,26.6891670739124,23.6016988957561,24.8702754468323,25.9419672908471],"mode":"markers","showlegend":false,"frame":"1","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","visible":true}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"frames":[{"name":"1","data":[{"x":["Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe"],"y":[29.830827857258,31.680800251195,29.073034455624,28.8983299910392,31.4720808642106,29.7842371969864,29.6594217003565,27.8233365762609,23.977896648464,28.8136513343975,28.4804124073959,30.5840997273214,30.8427971891582,27.4110218379982,30.1385701777269,28.3739230454559,33.0217061447157,29.4567822400802,33.1165078572427,29.5253002597909,27.5662457645059,24.9810207283561,24.1998344366815,25.0439712476424,28.4855347623956,22.7856516813879,22.8790210350204,28.9023226387152,26.2054134852142,20.9587810383292,28.0133510857511,26.9274221783392,21.8922171755781,23.4527152425526,27.5215559110515,25.8569115577621,26.6891670739124,23.6016988957561,24.8702754468323,25.9419672908471],"mode":"markers","showlegend":false,"frame":"1","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","visible":true}],"traces":[0]},{"name":"2","data":[{"x":["Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe"],"y":[25.7270012433695,23.7708881816496,25.4578985808859,24.4758863325122,26.225111981384,21.0847750147506,23.6729850570707,25.5675750308744,25.5374359268978,23.7197905190233,27.1599025330317,24.2697073183623,26.1787307790029,24.807808105937,26.9430155105561,26.1569378894338,23.4456529931258,23.7983157688023,22.0013611816476,26.5083268492023,24.1145886502515,23.1897542915469,19.4371171666831,20.7824151732879,22.4651044355665,20.8466938312347,22.0176965695746,26.2783959777092,23.7935540257323,19.8038532139323,20.0646196497123,25.0802757749537,24.5656619822663,22.0458071589185,23.1880492788706,24.1979587102957,17.205404062493,24.1673933842649,27.7521667367255,21.7074758785454],"mode":"markers","showlegend":false,"frame":"2","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","visible":true}],"traces":[0]},{"name":"3","data":[{"x":["Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Wartegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe","Therapiegruppe"],"y":[24.9722759148073,20.8420271615721,19.6252022720478,32.1784294598016,17.274665318798,28.861132525158,23.6171059328365,20.194422137344,26.4050619665362,11.9418910483501,27.0779384131941,30.2757679945841,21.9891328968693,21.5284471185144,18.5942720795642,27.0763516326205,25.317876469631,23.8234173721616,21.451050876094,23.7228690466201,26.8905538338949,20.2982792270221,21.0579030939783,20.6647837145826,26.104830214996,24.5163606796124,27.8226347803436,24.9069054586935,26.5038030289862,27.6998680001899,25.5329582796151,23.4860477388813,27.6410434090859,22.7358840287411,30.3554214741602,30.1609266097141,26.7802640496526,30.3308778274589,22.4262761537366,25.1048319310632],"mode":"markers","showlegend":false,"frame":"3","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","visible":true}],"traces":[0]}],"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script></p>
+<p>Hat die Intervention funktioniert?</p>
+</div>
+<div id="hat-die-intervention-funktioniert" class="section level3">
+<h3>Hat die Intervention funktioniert?</h3>
+<div id="vorsicht-1" class="section level4">
+<h4>Vorsicht!</h4>
+<p>Eine einfache Aussage über unsere Stichprobe ist uninteressant.</p>
+<p>Externe Validität usw. müssen wir als versuchsplanerisch gegeben annehmen, eigentlich interessant ist die allgemeine Aussage, ob die Intervention zu einer Änderung der Depressivität führt, also, etwas anders formuliert, ob sich die Verteilung der Depressivitätswerte nach der Intervention von der Verteilung der Normal-Population unterscheidet.</p>
+<p>Die inhaltliche Hypothese lautet deswegen:</p>
+<p>Die depressive Symptomatik verringert sich durch die Intervention.</p>
+<p>Gibt es einen Unterschied und wenn ja, wie groß ist dieser?
+Und wie könnte man diesen Unterschied statistisch untersuchen?</p>
+</div>
+</div>
+<div id="kleiner-exkurs-verteilungen" class="section level3">
+<h3>kleiner Exkurs: Verteilungen</h3>
+<p>Wir betrachten jetzt die Mittelwerte der Gruppen, nicht die Originalwerte. Unser Experiment sieht dann zum Beispiel so aus:</p>
+<p><img src="Versuchsplanung_WS20_files/figure-html/unnamed-chunk-154-1.png" width="600px" style="display: block; margin: auto;" /></p>
+<!-- ### kleiner Exkurs: Verteilungen -->
+<p>Da wir in unserer Messung aber auch den uns schon bekannten <em>Zufallsfehler</em> haben, wird sich nicht jedes mal exakt dieses Bild ergeben, wenn wir das Experiment zum Beispiel 500 mal durchführen, könnten die Mittelwerte dieser Durchläufe das folgende Bild ergeben:</p>
+<p><img src="Versuchsplanung_WS20_files/figure-html/unnamed-chunk-155-1.png" width="600px" style="display: block; margin: auto;" /></p>
+<!-- ### kleiner Exkurs: Verteilungen -->
+<p>Ein bisschen anders dargestellt sieht das so aus:</p>
+<p><img src="Versuchsplanung_WS20_files/figure-html/unnamed-chunk-156-1.png" width="600px" style="display: block; margin: auto;" /></p>
+<p>Was praktischerweise ziemlich doll einer Normalverteilung ähnelt:</p>
+<p><img src="Versuchsplanung_WS20_files/figure-html/unnamed-chunk-157-1.png" width="600px" style="display: block; margin: auto;" /></p>
+<p>Wir nutzen diese Ähnlichkeit um die Heuristik zu benutzen, dass wir keinen Unterschied in den Gruppen mehr zu zeigen versuchen, sondern einen Unterschied in den Verteilungen, aus denen die Gruppenwerte gezogen wurden.</p>
+</div>
+<div id="problem" class="section level3">
+<h3>Problem:</h3>
+<div id="wir-wissen-nicht-wie-die-wahre-verteilung-der-werte-aussieht." class="section level4">
+<h4>Wir wissen nicht, wie die wahre Verteilung der Werte aussieht.</h4>
+<p><img src="Versuchsplanung_WS20_files/figure-html/unnamed-chunk-159-1.png" width="800px" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="lösung-statistischer-hypothesentest" class="section level3">
+<h3>Lösung: Statistischer Hypothesentest</h3>
+<p>Folgende Überlegung:</p>
+<p>Wir versuchen nicht, einen Unterschied zu zeigen, sondern versuchen, die Wahrscheinlichkeit sich fälschlicherweise für die Annahme eines Unterschieds zu entscheiden, klein zu halten.</p>
+<p>Wir müssen also aus unseren Daten eine Statistik bilden, über die wir Wahrscheinlichkeits-Aussagen für den Fall treffen können, dass kein Unterschied besteht.</p>
+<!-- ### Lösung -->
+<p>Die interessante Frage im Beispiel ist, ob die Wartegruppen-Population einen höheren Erwartungswert (und damit eine “weiter rechts liegende” Verteilung) hat als die Interventionsgruppen-Population. Anders ausgedrückt: ist die Differenz der Erwartungswerte größer als 0?</p>
+<p>Im Beispiel gelten folgende Voraussetzungen:</p>
+<ul>
+<li>Varianzen sind (der Einfachheit halber) bekannt und gleich</li>
+<li>Variablen sind normalverteilt</li>
+<li>Stichproben sind unabhängig und gleich groß (N=20)</li>
+</ul>
+Mit diesen Voraussetzungen können wir folgenden Bruch aufstellen: 
+<p>Dieser ist bei 0-Differenz <span class="math inline">\(N(0,1)\)</span>-verteilt.</p>
+</div>
+<div id="beispiel-1" class="section level3">
+<h3>Beispiel</h3>
+<p><img src="Versuchsplanung_WS20_files/figure-html/unnamed-chunk-161-1.png" width="600px" style="display: block; margin: auto;" /></p>
+<p>Der Wert unserer Teststatistik ist also:</p>
+<p><span class="math inline">\(z_{emp}={28.1-25.3 \over \sqrt{{ 16 \over 20 } + { 16 \over 20}}} = 2.21\)</span></p>
+<!-- ### Entscheidungsregel -->
+<p><img src="Versuchsplanung_WS20_files/figure-html/unnamed-chunk-163-1.png" width="600px" style="display: block; margin: auto;" /></p>
+<p>Nehmen wir unsere Hypothese, dass die Therapie zu niedrigerer Depressionssymptomatik führt, an?</p>
+</div>
+<div id="prinzip-des-hypothesentestens-1" class="section level3">
+<h3>Prinzip des Hypothesentestens</h3>
+<p>Da wir uns guten Gewissens gegen die <span class="math inline">\(H_0\)</span> entscheiden wollen, legen wir eine Obergrenze für den Fehler 1. Art fest:</p>
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; ; margin-left: auto; margin-right: auto; height: 200px; " id="tab:unnamed-chunk-164">
+<caption style="caption-side: top; text-align: center;"><span id="tab:unnamed-chunk-164">Tab. 16: </span> </caption><col><col><col><col><tr>
+<td rowspan="2" colspan="2" style="vertical-align: middle; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></td><td colspan="2" style="vertical-align: middle; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Entscheidung für</td></tr>
+<tr>
+<td style="vertical-align: middle; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Nullhypothese</td><td style="vertical-align: middle; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Alternativhypothese</td></tr>
+<tr>
+<td rowspan="2" style="vertical-align: middle; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Tatsächlich gilt</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Nullhypothese</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Fehler 2. Art</td></tr>
+<tr>
+<td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Alternativhypothese</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Fehler 1. Art</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></td></tr>
+</table>
+
+<!-- ### Beispiel -->
+<p><img src="Versuchsplanung_WS20_files/figure-html/unnamed-chunk-165-1.png" width="600px" style="display: block; margin: auto;" /></p>
+<!-- ### Prinzip des Hypothesentestens -->
+<p>In der Tabelle ist aber noch ein Fehler 2. Art / <span class="math inline">\(\beta\)</span>-Fehler aufgeführt.</p>
+<table class="huxtable" style="border-collapse: collapse; border: 0px; margin-bottom: 2em; margin-top: 2em; ; margin-left: auto; margin-right: auto; height: 200px; " id="tab:unnamed-chunk-166">
+<caption style="caption-side: top; text-align: center;"><span id="tab:unnamed-chunk-166">Tab. 17: </span> </caption><col><col><col><col><tr>
+<td rowspan="2" colspan="2" style="vertical-align: middle; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></td><td colspan="2" style="vertical-align: middle; text-align: center; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Entscheidung für</td></tr>
+<tr>
+<td style="vertical-align: middle; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Nullhypothese</td><td style="vertical-align: middle; text-align: center; white-space: normal; border-style: solid solid solid solid; border-width: 0pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Alternativhypothese</td></tr>
+<tr>
+<td rowspan="2" style="vertical-align: middle; text-align: left; white-space: normal; padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Tatsächlich gilt</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Nullhypothese</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Fehler 2. Art</td></tr>
+<tr>
+<td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Alternativhypothese</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;">Fehler 1. Art</td><td style="vertical-align: middle; text-align: left; white-space: normal; border-style: solid solid solid solid; border-width: 0.4pt 0.4pt 0.4pt 0.4pt;    padding: 6pt 6pt 6pt 6pt; font-weight: normal;"></td></tr>
+</table>
+
+<p>Können wir zu diesem Aussagen treffen?</p>
+<!-- ### Prinzip des Hypothesentestens -->
+<iframe width="800" height="400" src="https://mbrede.shinyapps.io/VPlanung/">
+</iframe>
+<!-- ### Prinzip des Hypothesentestens -->
+<p><strong>Möglichkeiten, um <span class="math inline">\(\beta\)</span> zu verkleinern und die Power zu vergrößern</strong></p>
+<ul>
+<li>N vergrößern <span class="math inline">\(\rightarrow\)</span> Verteilungen werden schmaler</li>
+<li>Effektgröße erhöhen <span class="math inline">\(\rightarrow\)</span> Verteilungen rutschen auseinander</li>
+<li>größeres <span class="math inline">\(\alpha\)</span> wählen <span class="math inline">\(\rightarrow \beta\)</span> wird automatisch kleiner</li>
+</ul>
+<p>Wie sehen statistische Hypothesen aus?</p>
+</div>
+</div>
+<div id="statistische-hypothesen" class="section level2">
+<h2>Statistische Hypothesen</h2>
+<div id="wie-sehen-statistische-hypothesen-aus" class="section level3">
+<h3>Wie sehen statistische Hypothesen aus?</h3>
+<p>Das kommt auf den Versuchsplan, die Fragestellung und das gewählte statistische Verfahren an. Ein paar Beispiele:</p>
+<p><img src="imgs/stats.png" width="800px" style="display: block; margin: auto;" /></p>
+<!-- \scriptsize -->
+<!-- \begin{tikzpicture} -->
+<!--   \node[draw = black,rounded corners ](a){\begin{tabular}{l}Welche Aussage soll\\ getroffen werden\end{tabular}}; -->
+<!--   \node[draw = black,rounded corners, below left= 0.5cm and 0 of a](b1){Anzahl UV}; -->
+<!--   \node[draw = black,rounded corners, below left = 0.5cm and 0  of b1](c1){Anzahl Stufen}; -->
+<!--   \node[draw = black,rounded corners,align = left, below left =0.5cm and 0  of c1](d1){t-Test}; -->
+<!--   \node[draw = black,rounded corners, below right =0.75cm and 0  of c1](d2){\begin{tabular}{c}einfaktorielle VA \\ Linearkontraste \end{tabular}}; -->
+<!--   \node[draw = black,rounded corners, below right = 0.5cm and 0  of b1](d3){\begin{tabular}{c}mehrfaktorielle VA  \end{tabular}}; -->
+<!--   \node[draw = black,rounded corners, below right= 0.5cm and 0  of a](b2){Anzahl Variablen}; -->
+<!--   \node[draw = black,rounded corners, below left = 2.75cm and 0  of b2](d4){\begin{tabular}{c}einfache Regression \\ Korrelation \end{tabular}}; -->
+<!--   \node[draw = black,rounded corners, below right = 2.5cm and -1cm  of b2](d5){multiple Regression }; -->
+<!--   \draw [-{Latex[length=3mm]}]  -->
+<!--     (a) edge ["Unterschiede"]                   (b1)  -->
+<!--     (a) edge ["Zusammenhänge"]             (b2) -->
+<!--     (b1) edge ["1"]  (c1) -->
+<!--     (b1) edge [">1"] (d3) -->
+<!--     (c1) edge ["$\leq 2$"]  (d1) -->
+<!--     (c1) edge ["$\geq 2$"]  (d2) -->
+<!--     (b2) edge ["2"]  (d4) -->
+<!--     (b2) edge ["$\geq 2$"]  (d5); -->
+<!-- \end{tikzpicture} -->
+</div>
+<div id="t-test" class="section level3">
+<h3>t-Test</h3>
+<div id="typisches-hypothesenpaar" class="section level4">
+<h4>Typisches Hypothesenpaar:</h4>
+<p><span class="math display">\[\text{H}_0: \mu_{\text{1}} \leq \mu_{\text{2}}\]</span>
+<span class="math display">\[\text{H}_1:\mu_{\text{1}} &gt; \mu_{\text{2}}\]</span></p>
+</div>
+<div id="typische-darstellungen" class="section level4">
+<h4>Typische Darstellungen:</h4>
+<p><img src="imgs/t.png" width="800px" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="einfaktorielle-varianzanalyse" class="section level3">
+<h3>einfaktorielle Varianzanalyse</h3>
+<div id="typisches-hypothesenpaar-1" class="section level4">
+<h4>Typisches Hypothesenpaar:</h4>
+<p><span class="math display">\[\text{H}_0: \mu_{\text{1}} = \mu_{\text{2}} = \mu_{\text{3}}\]</span>
+<span class="math display">\[\text{H}_1:\text{nicht } \text{H}_0\]</span></p>
+</div>
+<div id="typische-darstellungen-1" class="section level4">
+<h4>Typische Darstellungen:</h4>
+<p><img src="imgs/efVA.png" width="800px" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="mehrfaktorielle-varianzanalyse" class="section level3">
+<h3>mehrfaktorielle Varianzanalyse</h3>
+<p>Wird mit jedem zusätzlichen Faktor komplizierter, deswegen hier nur der 2-faktorielle Fall.</p>
+<div id="typische-nullhypothesen" class="section level4">
+<h4>Typische Nullhypothesen:</h4>
+<p><span class="math display">\[\text{H}_{0A}:  \mu_{1\cdot}  =  \mu_{2\cdot}  =  \cdots   =  \mu_{j\cdot}\]</span>
+<span class="math display">\[\text{H}_{0B}:  \mu_{\cdot 1}  =  \mu_{\cdot 2}  =  \cdots   =  \mu_{\cdot k}\]</span>
+<span class="math display">\[\text{H}_{0I}:  \forall {\mu}_{jk} \text{ gilt}: {\mu}_{jk}  =  {\mu}_{j\cdot} + {\mu}_{\cdot k} - \mu\]</span></p>
+</div>
+<div id="typische-darstellungen-2" class="section level4">
+<h4>Typische Darstellungen:</h4>
+<p><img src="imgs/mfVA.png" width="800px" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="korrelationen-einfache-regression" class="section level3">
+<h3>Korrelationen / einfache Regression</h3>
+<div id="typisches-hypothesenpaar-2" class="section level4">
+<h4>Typisches Hypothesenpaar</h4>
+<p><span class="math display">\[\text{H}_0: \rho_{X,Y}  \leq  0\]</span>
+<span class="math display">\[\text{H}_1: \rho_{X,Y}  &gt;  0\]</span></p>
+</div>
+<div id="typische-darstellungen-3" class="section level4">
+<h4>Typische Darstellungen:</h4>
+<p><img src="imgs/sc.png" width="800px" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="ergebnisdarstellung" class="section level3">
+<h3>Ergebnisdarstellung</h3>
+<p><img src="imgs/copyright.png" width="800px" style="display: block; margin: auto;" /></p>
+</div>
+<div id="ergebnisdarstellung-1" class="section level3">
+<h3>Ergebnisdarstellung</h3>
+<p><img src="imgs/copyright.png" width="800px" style="display: block; margin: auto;" /></p>
+</div>
+<div id="übung-2" class="section level3">
+<h3>Übung</h3>
+<p>Übung</p>
+<!-- ### Prinzip des Hypothesentestens -->
+<p>Wird man in Klausuren besser, wenn man vorher LSD nimmt?
+<span class="math display">\[\text{H}_0: \mu_{\text{LSD}}  \leq  \mu_{\text{Placebo}}\]</span>
+<span class="math display">\[\text{H}_1: \mu_{\text{LSD}}  &gt;  \mu_{\text{Placebo}}\]</span></p>
+<!-- ### Prinzip des Hypothesentestens -->
+<p>Gibt es einen Zusammenhang zwischen der Exzentrik von Frisuren und dem Ausmaß der Psychopathie nach Hare?
+<span class="math display">\[ \text{H}_0: \rho_{Frise,PP}  \leq  0 \]</span>
+<span class="math display">\[\text{H}_1: \rho_{Frise,PP}  &gt;  0\]</span></p>
+<div class="cols">
+<div class="col">
+<p><img src="imgs/copyright.png" width="450px" style="display: block; margin: auto;" /></p>
+</div>
+<div class="col">
+<p><img src="imgs/copyright.png" width="450px" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<!-- ### Prinzip des Hypothesentestens -->
+<p>Verbessert sich bei Kindern mit ADHS unter Gabe von Methylphenidat (vs. Placebo) die Blau-Gelb-Diskrimination, aber nicht die Rot-Grün-Diskrimination?</p>
+<div class="cols">
+<div class="col">
+<p><img src="imgs/copyright.png" width="450px" style="display: block; margin: auto;" /></p>
+</div>
+<div class="col">
+
+</div>
+</div>
+<p><span class="math display">\[\text{H}_0: \mu_{\text{BG, MPH}} -\mu_{\text{BG, Placebo}} \leq \mu_{\text{RG, MPH}} -\mu_{\text{RG,Placebo}}\]</span>
+<span class="math display">\[\text{H}_1: \mu_{\text{BG, MPH}} -\mu_{\text{BG, Placebo}}  &gt; \mu_{\text{RG, MPH}} -\mu_{\text{RG, Placebo}}\]</span></p>
+<!-- ### Prinzip des Hypothesentestens -->
+<p>Stimmt es, dass sich die Unfallhäufigkeit von
+roten und silbernen Autos nicht unterscheidet?</p>
+<table class=" lightable-classic" style="font-size: 15px; font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Farbe
+</th>
+<th style="text-align:right;">
+kein Unfall
+</th>
+<th style="text-align:right;">
+Unfall
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+rot
+</td>
+<td style="text-align:right;">
+10000
+</td>
+<td style="text-align:right;">
+300
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+silber
+</td>
+<td style="text-align:right;">
+70000
+</td>
+<td style="text-align:right;">
+210
+</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[\text{H}_0: \rho_{Autofarbe,Unfallrate}  \leq  0\]</span></p>
+<p>Test auf Nullhypothese ist nicht in der gleichen Form möglich, da wir den Fall der Nullhypothese brauchen um eine Vertielung zu haben über die wir Wahrscheinlichkeitsaussagen treffen können.</p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="material-und-stichprobe.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="literatur-2.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Versuchsplanung_WS20.pdf"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
